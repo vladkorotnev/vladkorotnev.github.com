@@ -2,38 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>http://vladkorotnev.github.com/index.html</loc>
-		<lastmod>2011-07-04</lastmod>
+		<lastmod>2011-07-05</lastmod>
 	</url>
 	<url>
 		<loc>http://vladkorotnev.github.com/styled/index.html</loc>
-		<lastmod>2011-07-04</lastmod>
+		<lastmod>2011-07-05</lastmod>
 	</url>
 	<url>
 		<loc>http://vladkorotnev.github.com/styled/blog-3/index.html</loc>
+		<lastmod>2011-07-05</lastmod>
 	</url>
 	<url>
 		<loc>http://vladkorotnev.github.com/styled/blog-3/files/ecfbf1de300f0efbd2319863c16a1678-0.html</loc>
+		<lastmod>2011-07-05</lastmod>
 	</url>
 	<url>
 		<loc>http://vladkorotnev.github.com/styled/blog-3/files/archive-jul-2011.html</loc>
+		<lastmod>2011-07-05</lastmod>
 	</url>
 	<url>
 		<loc>http://vladkorotnev.github.com/styled/blog/index.html</loc>
-		<lastmod>2011-07-04</lastmod>
+		<lastmod>2011-07-05</lastmod>
 	</url>
 	<url>
 		<loc>http://vladkorotnev.github.com/styled/blog/files/34a9240af3d704f61366dd0c3644564c-0.html</loc>
-		<lastmod>2011-07-04</lastmod>
+		<lastmod>2011-07-05</lastmod>
 	</url>
 	<url>
 		<loc>http://vladkorotnev.github.com/styled/blog/files/archive-jul-2011.html</loc>
-		<lastmod>2011-07-04</lastmod>
-	</url>
-	<url>
-		<loc>http://vladkorotnev.github.com/styled/blog/files/category-iphone.html</loc>
-		<lastmod>2011-07-04</lastmod>
+		<lastmod>2011-07-05</lastmod>
 	</url>
 	<url>
 		<loc>http://vladkorotnev.github.com/styled/blog-2/index.html</loc>
+		<lastmod>2011-07-05</lastmod>
+	</url>
+	<url>
+		<loc>http://vladkorotnev.github.com/styled/blog-2/files/8ae06efd2560e33dff335e52bbdbf332-0.html</loc>
+		<lastmod>2011-07-05</lastmod>
+	</url>
+	<url>
+		<loc>http://vladkorotnev.github.com/styled/blog-2/files/archive-jul-2011.html</loc>
+		<lastmod>2011-07-05</lastmod>
+	</url>
+	<url>
+		<loc>http://vladkorotnev.github.com/styled-2/index.html</loc>
 	</url>
 </urlset>
