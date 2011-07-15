@@ -11,5 +11,5 @@
 <admin:errorReportsTo rdf:resource="mailto:user@domain.com" /><sy:updatePeriod>hourly</sy:updatePeriod>
 <sy:updateFrequency>1</sy:updateFrequency>
 <sy:updateBase>2000-01-01T12:00+00:00</sy:updateBase>
-<lastBuildDate>Tue, 05 Jul 2011 01:18:40 +0600</lastBuildDate><item><title>soon.</title><dc:creator>user@domain.com</dc:creator><dc:subject>Contributions</dc:subject><dc:date>2011-07-05T01:16:37+06:00</dc:date><link>http://vladkorotnev.github.com/contributions/files/226fb3589fb2c2667f061193e8541671-0.html#unique-entry-id-0</link><guid isPermaLink="true">http://vladkorotnev.github.com/contributions/files/226fb3589fb2c2667f061193e8541671-0.html#unique-entry-id-0</guid><content:encoded><![CDATA[]]></content:encoded></item></channel>
+<lastBuildDate>Tue, 05 Jul 2011 01:16:02 +0600</lastBuildDate><item><title>soon.</title><dc:creator>user@domain.com</dc:creator><dc:subject>Contributions</dc:subject><dc:date>2011-07-05T01:16:37+06:00</dc:date><link>http://vladkorotnev.github.com/contributions/files/226fb3589fb2c2667f061193e8541671-0.html#unique-entry-id-0</link><guid isPermaLink="true">http://vladkorotnev.github.com/contributions/files/226fb3589fb2c2667f061193e8541671-0.html#unique-entry-id-0</guid><content:encoded><![CDATA[]]></content:encoded></item></channel>
 </rss>
