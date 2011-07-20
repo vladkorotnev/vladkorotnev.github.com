@@ -11,5 +11,5 @@
 <admin:errorReportsTo rdf:resource="mailto:user@domain.com" /><sy:updatePeriod>hourly</sy:updatePeriod>
 <sy:updateFrequency>1</sy:updateFrequency>
 <sy:updateBase>2000-01-01T12:00+00:00</sy:updateBase>
-<lastBuildDate>Wed, 20 Jul 2011 23:02:35 +0600</lastBuildDate><item><title>Soon</title><dc:creator>user@domain.com</dc:creator><dc:subject>Welcome</dc:subject><dc:date>2011-07-05T00:55:46+06:00</dc:date><link>http://vladkorotnev.github.com/hardware/winamp/files/61d8a30725e40916fb44cc9f5279dd9e-0.html#unique-entry-id-0</link><guid isPermaLink="true">http://vladkorotnev.github.com/hardware/winamp/files/61d8a30725e40916fb44cc9f5279dd9e-0.html#unique-entry-id-0</guid><content:encoded><![CDATA[]]></content:encoded></item></channel>
+<lastBuildDate>Tue, 05 Jul 2011 00:54:49 +0600</lastBuildDate><item><title>Soon</title><dc:creator>user@domain.com</dc:creator><dc:subject>Welcome</dc:subject><dc:date>2011-07-05T00:55:46+06:00</dc:date><link>http://vladkorotnev.github.com/hardware/winamp/files/61d8a30725e40916fb44cc9f5279dd9e-0.html#unique-entry-id-0</link><guid isPermaLink="true">http://vladkorotnev.github.com/hardware/winamp/files/61d8a30725e40916fb44cc9f5279dd9e-0.html#unique-entry-id-0</guid><content:encoded><![CDATA[]]></content:encoded></item></channel>
 </rss>
