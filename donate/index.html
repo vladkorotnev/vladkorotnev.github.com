@@ -1,50 +1,16 @@
-<html><head><title>Donate</title>
-<script language="JavaScript">
-function checkIt(evt) {
-    evt = (evt) ? evt : window.event
-    var charCode = (evt.which) ? evt.which : evt.keyCode
-    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
-        status = "This field accepts numbers only."
-        return false
-    }
-    status = ""
-    return true
-}
-</script></head><body>
-Enter Donation Amount:
-<form method="post" action="https://www.alertpay.com/PayProcess.aspx">
-     <input type="hidden" name="ap_purchasetype" value="item-goods">
-     <input type="hidden" name="ap_merchant" value="vladkorotnev@gmail.com">
-     <input type="hidden" name="ap_itemname" value="Donate">
-     <input type="hidden" name="ap_returnurl" value="thanks.html">
-     <input type="hidden" name="ap_quantity" value="1">
-     <input type="hidden" name="ap_description" value="Your each penny will keep me to continue development of awesome software">
-     <input type="text" name="ap_amount" value="" onKeyPress="return checkIt(event)">
-<select name="ap_currency">
-<option value="AUD">AUD</option>
-<option value="BGN">BGN</option>
-<option value="CAD">CAD</option>
-<option value="CHF">CHF</option>
-<option value="CZK">CZK</option>
-<option value="DKK">DKK</option>
-<option value="EEK">EEK</option>
-<option value="EUR">EUR</option>
-<option value="GBP">GBP</option>
-<option value="HKD">HKD</option>
-<option value="HUF">HUF</option>
-<option value="LTL">LTL</option>
-<option value="MYR">MYR</option>
-<option value="NOK">NOK</option>
-<option value="NZD">NZD</option>
-<option value="PLN">PLN</option>
-<option value="RON">RON</option>
-<option value="SEK">SEK</option>
-<option value="SGD">SGD</option>
-<option value="USD" selected="selected">USD</option>
-<option value="ZAR">ZAR</option>
-</select>
-     <input type="hidden" name="ap_cancelurl" value="cancelled.html">
-     <input type="image" name="ap_image" src="donate.jpg">
-</form>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript">
+<!--
+location.replace("http://vladkorotnev.github.com/donation/index.html"); 
+//-->
+</script>
+<noscript>
+<meta http-equiv="refresh" content="0; url=http://vladkorotnev.github.com/donation/index.html"> 
+</noscript>
+</head>
+<body>
+This page has moved to a <a href="http://vladkorotnev.github.com/donation/index.html">new location</a>.
 </body>
 </html>
