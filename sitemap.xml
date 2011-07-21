@@ -2,114 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>http://vladkorotnev.github.com/index.html</loc>
-		<lastmod>2011-07-21</lastmod>
+	</url>
+	<url>
+		<loc>http://vladkorotnev.github.com/isounds/index.html</loc>
+	</url>
+	<url>
+		<loc>http://vladkorotnev.github.com/isounds/files/40bb6557ffdd17cff86da1d53f42b8dc-0.html</loc>
+	</url>
+	<url>
+		<loc>http://vladkorotnev.github.com/isounds/files/archive-jul-2011.html</loc>
 	</url>
 	<url>
 		<loc>http://vladkorotnev.github.com/software/index.html</loc>
-		<lastmod>2011-07-21</lastmod>
 	</url>
 	<url>
 		<loc>http://vladkorotnev.github.com/software/winmo/index.html</loc>
-		<lastmod>2011-07-21</lastmod>
-	</url>
-	<url>
-		<loc>http://vladkorotnev.github.com/software/winmo/files/ecfbf1de300f0efbd2319863c16a1678-0.html</loc>
-		<lastmod>2011-07-21</lastmod>
-	</url>
-	<url>
-		<loc>http://vladkorotnev.github.com/software/winmo/files/archive-jul-2011.html</loc>
-		<lastmod>2011-07-21</lastmod>
 	</url>
 	<url>
 		<loc>http://vladkorotnev.github.com/software/ios/index.html</loc>
-		<lastmod>2011-07-21</lastmod>
 	</url>
 	<url>
 		<loc>http://vladkorotnev.github.com/software/ios/files/566cf3710f12fd9c68d114ae6dfb49ad-2.html</loc>
-		<lastmod>2011-07-21</lastmod>
 	</url>
 	<url>
 		<loc>http://vladkorotnev.github.com/software/ios/files/c5d32def323547a15eb4e0b529ea7a03-1.html</loc>
-		<lastmod>2011-07-21</lastmod>
 	</url>
 	<url>
 		<loc>http://vladkorotnev.github.com/software/ios/files/34a9240af3d704f61366dd0c3644564c-0.html</loc>
-		<lastmod>2011-07-21</lastmod>
-	</url>
-	<url>
-		<loc>http://vladkorotnev.github.com/software/ios/files/archive-jul-2011.html</loc>
-		<lastmod>2011-07-21</lastmod>
 	</url>
 	<url>
 		<loc>http://vladkorotnev.github.com/software/windows/index.html</loc>
-		<lastmod>2011-07-21</lastmod>
 	</url>
 	<url>
 		<loc>http://vladkorotnev.github.com/software/windows/files/8ae06efd2560e33dff335e52bbdbf332-0.html</loc>
-		<lastmod>2011-07-21</lastmod>
-	</url>
-	<url>
-		<loc>http://vladkorotnev.github.com/software/windows/files/archive-jul-2011.html</loc>
-		<lastmod>2011-07-21</lastmod>
 	</url>
 	<url>
 		<loc>http://vladkorotnev.github.com/software/crossplatform/index.html</loc>
-		<lastmod>2011-07-21</lastmod>
-	</url>
-	<url>
-		<loc>http://vladkorotnev.github.com/software/crossplatform/files/c6f0433dfc6926b15651245d67b119a3-0.html</loc>
-		<lastmod>2011-07-21</lastmod>
-	</url>
-	<url>
-		<loc>http://vladkorotnev.github.com/software/crossplatform/files/archive-jul-2011.html</loc>
-		<lastmod>2011-07-21</lastmod>
-	</url>
-	<url>
-		<loc>http://vladkorotnev.github.com/hardware/index.html</loc>
-		<lastmod>2011-07-21</lastmod>
-	</url>
-	<url>
-		<loc>http://vladkorotnev.github.com/hardware/files/24143eb7501e29c405581ae5768baf87-0.html</loc>
-		<lastmod>2011-07-21</lastmod>
-	</url>
-	<url>
-		<loc>http://vladkorotnev.github.com/hardware/files/archive-jul-2011.html</loc>
-		<lastmod>2011-07-21</lastmod>
-	</url>
-	<url>
-		<loc>http://vladkorotnev.github.com/hardware/winamp/index.html</loc>
-		<lastmod>2011-07-21</lastmod>
-	</url>
-	<url>
-		<loc>http://vladkorotnev.github.com/hardware/winamp/files/61d8a30725e40916fb44cc9f5279dd9e-0.html</loc>
-		<lastmod>2011-07-21</lastmod>
-	</url>
-	<url>
-		<loc>http://vladkorotnev.github.com/hardware/winamp/files/archive-jul-2011.html</loc>
-		<lastmod>2011-07-21</lastmod>
-	</url>
-	<url>
-		<loc>http://vladkorotnev.github.com/hardware/iphoneserial/index.html</loc>
-		<lastmod>2011-07-21</lastmod>
-	</url>
-	<url>
-		<loc>http://vladkorotnev.github.com/hardware/iphoneserial/files/59536d853766632397d4c5f9c8560130-0.html</loc>
-		<lastmod>2011-07-21</lastmod>
-	</url>
-	<url>
-		<loc>http://vladkorotnev.github.com/hardware/iphoneserial/files/archive-jul-2011.html</loc>
-		<lastmod>2011-07-21</lastmod>
 	</url>
 	<url>
 		<loc>http://vladkorotnev.github.com/downloads/index.html</loc>
-		<lastmod>2011-07-21</lastmod>
 	</url>
 	<url>
 		<loc>http://vladkorotnev.github.com/donation/index.html</loc>
-		<lastmod>2011-07-21</lastmod>
 	</url>
 	<url>
 		<loc>http://vladkorotnev.github.com/contact/index.html</loc>
-		<lastmod>2011-07-21</lastmod>
 	</url>
 </urlset>
