@@ -1,33 +1,138 @@
 <!DOCTYPE html>
 <html>
   <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=9" />
-	<meta name="viewport" content="user-scalable=yes, width=1074" />
-	<title>gbb</title>
-	<style>
-		body {
-			background-color: #FFFFFF;
-			margin: 0px;
-		}
-	</style>
-	
+    <title>GBBrowser</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="my.css" rel="stylesheet" media="screen">
   </head>
   <body>
-	<div style ="margin:auto;width:1074px">
+    <div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="http://vladkorotnev.github.com">GBBrowser</a>
+    <ul class="nav">
+      <li><a href="mac">For Mac</a></li>
+      <li><a href="ios">For iOS</a></li>
+      <li><a data-toggle="modal" href="#myModal" >Video</a>
 
 
-	
-	<!-- copy these lines to your document: -->
 
-	<div id="gbb_hype_container" style="position:relative;overflow:hidden;width:1074px;height:768px;">
-		<script type="text/javascript" charset="utf-8" src="gbb_Resources/gbb_hype_generated_script.js?21043"></script>
-	</div>
+<div class="modal hide fade in" id="myModal">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    <h3>GBBrowser Promo Video</h3>
+  </div>
+  <div class="modal-body">
+     <iframe width="470" height="388" src="http://www.youtube.com/embed/2Zn6UfRaqWc?rel=0" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+    <a href="http://www.youtube.com/playlist?list=PLOhXWhc6IwIEzKVXOJpLxVfBKLOWf4-c2&feature=mh_lolz" class="btn btn-primary">More videos</a>
+  </div>
+</div></li>
+  </a>
+</li>
+    </ul>
+  </div>
+</div>
 
-	<!-- end copy -->
-	
+<div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/main-slides/macintosh.png" alt="" class="macintosh">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Meet the ultimate imageboard toolkit.</h1>
+              <p class="lead">Browse and search in Cover Flow, perform statistical analysis of character appearances and finally, show off your favourite ones as a screensaver. This is an otaku heaven.</p>
+              <a class="btn btn-large btn-primary" href="mac">Version for Mac</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/main-slides/mobility.png" class="macintosh" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Go mobile.</h1>
+              <p class="lead">A multitude of anime arts. Right in the palm of your hand.</p>
+              <a class="btn btn-large btn-primary" href="#">iOS version</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="" class="xcode" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Built with care for native experience.</h1>
+              <p class="lead">GBBrowser is not another crossplatform program. It was handcrafted with care for every platform it exists for.</p>
+              <a class="btn btn-large btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+    Get source code
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu">
+  	<li><a href="https://github.com/vladkorotnev/PrjKawaii">Windows (.net, Visual Studio)</a></li>
+  	<li><a href="https://github.com/vladkorotnev/PrjKawaii-Mac">Mac OS X</a></li>
+  	<li><a href="https://github.com/vladkorotnev/GBBrowserMobile">iPhone and iPad</a></li>
+    <!-- dropdown menu links -->
+  </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+    </div>
+          </div>
+<div class="container marketing">
 
 
-	</div>
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image centered" src="img/loadingMore.jpg">
+        <h2 class="featurette-heading">Fast and easy to use. <span class="muted">The sky's the limit.</span></h2>
+        <p class="lead">Designed to handle loads of images, this thing doesn't stutter even after you've been browsing a lot.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image centered" src="img/forfree.jpg">
+        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
+        <p class="lead">GBBrowser is completely free to use.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image centered" src="img/iphone.png">
+         <img class="featurette-image centered" src="img/mac.png">
+        <h2 class="featurette-heading">Designed for Mac and iOS. <span class="muted">Checkmate.</span></h2>
+        <p class="lead">You won't even notice it's not a built-in app.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>© 2013 vladkorotnev</p>
+      </footer>
+
+    </div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript">
+    	setTimeout($('myCarousel').carousel(), 1000);
+    </script>
   </body>
 </html>

@@ -1,0 +1,106 @@
+
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+      background-color: black;
+    }
+    
+    .hero-phone{
+	         margin-left: 15%;
+      margin-right: 15%;
+      border-radius: 15px;
+      background-color: gray;
+     }
+    .hero-container{
+	   
+	    margin-left: 15%;
+	    margin-right: 15%;
+	    min-width: 500px;
+	   
+    }
+
+    .hero-subclassed {
+	    .hero-unit
+	    background-color: black;
+	    
+    }
+    .hero-subclassed h1 {
+	    color: #fff;
+      text-shadow:0px 0px 15px rgba(255,255,255,1);
+    }
+    .hero-sub {
+	    color: #fff;
+      text-shadow:0px 0px 10px rgba(255,255,255,0.74)
+    }
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+    .container .marketing {
+	    margin-left: 5%;
+	    margin-right: 5%;
+	    min-width: 500px;
+    }
+    
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+    background-color: #515151;
+    border-color: #494949; /* Space out the Bootstrap <hr> more */
+    margin-bottom: 15px;
+    margin-top: 15px;
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+ 
+      
+    }
+   .centered{
+	         margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+
+
+   
+    
