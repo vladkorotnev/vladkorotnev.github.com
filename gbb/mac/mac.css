@@ -9,6 +9,9 @@
       color: #5a5a5a;
       background-color: white;
     }
+    .proper-content {
+    padding-top: 50px; /* >= navbar height */
+}
     
     .hero-phone{
 	         margin-left: 15%;
