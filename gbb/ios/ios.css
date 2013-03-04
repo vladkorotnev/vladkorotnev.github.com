@@ -19,6 +19,13 @@
       border-radius: 15px;
       background-color: gray;
      }
+     .hero-pad{
+	         margin-left: 15%;
+      margin-right: 15%;
+      border-radius: 0px;
+      background-color: black;
+     }
+
     .hero-container{
 	   
 	    margin-left: 15%;
