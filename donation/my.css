@@ -7,14 +7,21 @@
     body {
       padding-bottom: 40px;
       color: #5a5a5a;
-      background-color: black;
-            background-image: url("../office.png");
+      background-color: white;
+            background-image: url("../linen.png");
       background-repeat: repeat;
+      background-color: white;
     }
 
 .proper-content {
     padding-top: 70px; /* >= navbar height */
 }
+.toptext {
+      margin: 0;
+      line-height: 1.25;
+      color: #000;
+      text-shadow:0px 0px 30px rgba(0,0,0,.74)
+    }
 
 /* CUSTOMIZE THE NAVBAR
     -------------------------------------------------- */
@@ -56,78 +63,6 @@
 
     /* Offset the responsive button for proper vertical alignment */
     .navbar .btn-navbar {
-      margin-top: 10px;
-    }
-
-
-
-    /* CUSTOMIZE THE CAROUSEL
-    -------------------------------------------------- */
-
-
-    .carousel .container {
-      position: relative;
-      z-index: 9;
-    }
-
-    .carousel-control {
-      height: 80px;
-      margin-top: 0;
-      font-size: 120px;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-      background-color: transparent;
-      border: 0;
-      z-index: 10;
-    }
-
-    .carousel .item {
-      height: 500px;
-    }
-    .carousel .image {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      height: 500px;
-    }
-    .carousel .xcode {
-    position: absolute;
-      top: 0;
-      left: 0;
-	        min-width: 100%;
-    height: 500px;
-    background-image:url("img/main-slides/xcoded.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-color: transparent;
-    border-color: transparent;
-    }
-    .carousel .macintosh  {
-      top: 0px;
-     
-      	position: relative;
-      	float: right;
-      	margin-right: 12%;
-      height: 500px;
-     /* clear: both;*/
-    }
-    .carousel-caption {
-      background-color: transparent;
-      position: static;
-      max-width: 550px;
-      padding: 0 20px;
-      margin-top: 200px;
-    }
-    .carousel-caption h1,
-    .carousel-caption .lead {
-      margin: 0;
-      line-height: 1.25;
-      color: #fff;
-      text-shadow:0px 0px 30px rgba(255,255,255,0.74)
-    }
-
-    .carousel-caption .btn {
       margin-top: 10px;
     }
 

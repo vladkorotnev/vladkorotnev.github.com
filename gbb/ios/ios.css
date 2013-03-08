@@ -8,6 +8,8 @@
       padding-bottom: 40px;
       color: #5a5a5a;
       background-color: black;
+        background-image: url("../../office.png");
+      background-repeat: repeat;
     }
     .proper-content {
     padding-top: 50px; /* >= navbar height */

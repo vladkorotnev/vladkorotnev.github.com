@@ -7,14 +7,42 @@
     body {
       padding-bottom: 40px;
       color: #5a5a5a;
-      background-color: black;
-            background-image: url("../office.png");
+      background-image: url("linen.png");
       background-repeat: repeat;
+      background-color: white;
     }
 
 .proper-content {
     padding-top: 70px; /* >= navbar height */
 }
+.shadowed-txt {
+      margin: 0;
+      line-height: 1.25;
+      color: #000;
+      text-shadow:0px 0px 30px rgba(0,0,0,.74)
+    }
+     .hero-container{
+	   
+	    margin-left: 15%;
+	    margin-right: 15%;
+	    min-width: 500px;
+	   
+    }
+
+    .hero-subclassed {
+	    .hero-unit
+	    background-color: black;
+	    
+    }
+    .hero-subclassed h1 {
+	    color: #000;
+      text-shadow:0px 0px 15px rgba(0,0,0,0.4);
+    }
+    .hero-sub {
+	    color: #fff;
+      text-shadow:0px 0px 10px rgba(255,255,255,0.74)
+    }
+
 
 /* CUSTOMIZE THE NAVBAR
     -------------------------------------------------- */
@@ -59,8 +87,6 @@
       margin-top: 10px;
     }
 
-
-
     /* CUSTOMIZE THE CAROUSEL
     -------------------------------------------------- */
 
@@ -90,19 +116,6 @@
       min-width: 100%;
       height: 500px;
     }
-    .carousel .xcode {
-    position: absolute;
-      top: 0;
-      left: 0;
-	        min-width: 100%;
-    height: 500px;
-    background-image:url("img/main-slides/xcoded.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-color: transparent;
-    border-color: transparent;
-    }
     .carousel .macintosh  {
       top: 0px;
      
@@ -123,8 +136,8 @@
     .carousel-caption .lead {
       margin: 0;
       line-height: 1.25;
-      color: #fff;
-      text-shadow:0px 0px 30px rgba(255,255,255,0.74)
+      color: #000;
+      text-shadow:0px 0px 30px rgba(0,0,0,.74)
     }
 
     .carousel-caption .btn {
