@@ -8,6 +8,7 @@
       padding-bottom: 40px;
       color: #5a5a5a;
       background-color: white;
+      background-image: url("../../linen.png");
     }
     .proper-content {
     padding-top: 50px; /* >= navbar height */
