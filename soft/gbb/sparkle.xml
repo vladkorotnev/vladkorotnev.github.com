@@ -11,7 +11,7 @@
 							http://vladkorotnev.github.com/soft/mcsm/rnotes.html
 						</sparkle:releaseNotesLink>
             <pubDate>Sun, Mar 10 12:18:58 YEKT 2013</pubDate>
-            <enclosure url="http://vladkorotnev.github.com/soft/mcsm/mcsm.zip" sparkle:version="1.1" length="1461126" type="application/octet-stream" sparkle:dsaSignature="MCwCFFHQx3Ej86qwmqVib9dR2dJIu6OsAhRgaHgWtFIiTDgDCI1LGWluYfnwQA==" />
+            <enclosure url="http://vladkorotnev.github.com/soft/mcsm/mcsm.zip" sparkle:version="2.0" length="264568" type="application/octet-stream" sparkle:dsaSignature="MCwCFFHQx3Ej86qwmqVib9dR2dJIu6OsAhRgaHgWtFIiTDgDCI1LGWluYfnwQA==" />
          </item>
    </channel>
 </rss>
