@@ -11,7 +11,7 @@
 							http://vladkorotnev.github.com/soft/mcldr/rnotes.html
 						</sparkle:releaseNotesLink>
             <pubDate>Sun, Mar 10 12:18:58 YEKT 2013</pubDate>
-            <enclosure url="http://vladkorotnev.github.com/soft/mcldr/mcloader.zip" sparkle:version="1.9" length="1461126" type="application/octet-stream" sparkle:dsaSignature="MCwCFFHQx3Ej86qwmqVib9dR2dJIu6OsAhRgaHgWtFIiTDgDCI1LGWluYfnwQA==" />
+            <enclosure url="http://vladkorotnev.github.com/soft/mcldr/mcloader.zip" sparkle:version="1.8" length="1323" type="application/octet-stream" sparkle:dsaSignature="MC0CFH66DOlQx10DahvGOgvCSJsglcuIAhUAw8kcDeN5PEuuACs542fNZDjhcGI=" />
          </item>
    </channel>
 </rss>
