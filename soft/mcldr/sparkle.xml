@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
    <channel>
-      <title>GBBrowser Changelog</title>
+      <title>MCLoader Changelog</title>
       <link>http://vladkorotnev.github.com/soft/mcsm/sparkle.xml</link>
       <description>Most recent changes with links to updates.</description>
       <language>en</language>
          <item>
-            <title>Version 1.8</title>
+            <title>Version 1.1</title>
 						<sparkle:releaseNotesLink>
-							http://vladkorotnev.github.com/soft/gbb/rnotes.html
+							http://vladkorotnev.github.com/soft/mcldr/rnotes.html
 						</sparkle:releaseNotesLink>
             <pubDate>Sun, Mar 10 12:18:58 YEKT 2013</pubDate>
-            <enclosure url="http://vladkorotnev.github.com/soft/gbb/gbb-osx.zip" sparkle:version="1.8" length="1620166" type="application/octet-stream" sparkle:dsaSignature="MC0CFHwhBOXtbzsre4a5Y3FcTy2lhtlhAhUAy8sjDJRJxR5Inr3QgRSgpDEj/48=" />
+            <enclosure url="http://vladkorotnev.github.com/soft/mcldr/mcloader.zip" sparkle:version="1.9" length="1461126" type="application/octet-stream" sparkle:dsaSignature="MCwCFFHQx3Ej86qwmqVib9dR2dJIu6OsAhRgaHgWtFIiTDgDCI1LGWluYfnwQA==" />
          </item>
    </channel>
 </rss>
