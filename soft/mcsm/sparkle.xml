@@ -11,8 +11,7 @@
 							http://you.com/app/2.0.html
 						</sparkle:releaseNotesLink>
             <pubDate>Wed, 09 Jan 2006 19:20:11 +0000</pubDate>
-            <enclosure url="http://vladkorotnev.github.com/soft/mcsm/mcsm.zip" sparkle:version="2.0" length="264568" type="application/octet-stream" sparkle:dsaSignature="MEQCICDiqJ9jfVjceYlYs1p6TQ4JcdJv7XwGvRmgTjIxpzu7AiAb8Ue12IG/Ff2V
-uCDNoPYeW7fB4a3tPhGnWMHNeDnX6Q==" />
+            <enclosure url="http://vladkorotnev.github.com/soft/mcsm/mcsm.zip" sparkle:version="2.0" length="264568" type="application/octet-stream" sparkle:dsaSignature="MCwCFDO4EddMVZzULQqph57XNjAl+d5xAhRfHkqSRgY25g1OE6EG/eDYuhglhg==" />
          </item>
    </channel>
 </rss>
