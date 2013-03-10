@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
    <channel>
       <title>Your Great App's Changelog</title>
-      <link>http://you.com/app/appcast.xml</link>
+      <link>http://vladkorotnev.github.com/soft/mcsm/sparkle.xml</link>
       <description>Most recent changes with links to updates.</description>
       <language>en</language>
          <item>
             <title>Version 2.0 (2 bugs fixed; 3 new features)</title>
 						<sparkle:releaseNotesLink>
-							http://you.com/app/2.0.html
+							http://vladkorotnev.github.com/soft/mcsm/rnotes.html
 						</sparkle:releaseNotesLink>
             <pubDate>Wed, 09 Jan 2006 19:20:11 +0000</pubDate>
             <enclosure url="http://vladkorotnev.github.com/soft/mcsm/mcsm.zip" sparkle:version="2.0" length="264568" type="application/octet-stream" sparkle:dsaSignature="MCwCFDO4EddMVZzULQqph57XNjAl+d5xAhRfHkqSRgY25g1OE6EG/eDYuhglhg==" />
