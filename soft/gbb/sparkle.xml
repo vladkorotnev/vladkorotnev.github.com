@@ -6,12 +6,12 @@
       <description>Most recent changes with links to updates.</description>
       <language>en</language>
          <item>
-            <title>Version 1.1</title>
+            <title>Version 1.8</title>
 						<sparkle:releaseNotesLink>
-							http://vladkorotnev.github.com/soft/mcsm/rnotes.html
+							http://vladkorotnev.github.com/soft/gbb/rnotes.html
 						</sparkle:releaseNotesLink>
             <pubDate>Sun, Mar 10 12:18:58 YEKT 2013</pubDate>
-            <enclosure url="http://vladkorotnev.github.com/soft/mcsm/mcsm.zip" sparkle:version="2.0" length="264568" type="application/octet-stream" sparkle:dsaSignature="MCwCFFHQx3Ej86qwmqVib9dR2dJIu6OsAhRgaHgWtFIiTDgDCI1LGWluYfnwQA==" />
+            <enclosure url="http://vladkorotnev.github.com/soft/gbb/gbb-osx.zip" sparkle:version="1.9" length="1620296" type="application/octet-stream" sparkle:dsaSignature="MC0CFQCkoAUJJtRrp5kSyUvhfETZIzN0aAIUfOqgTMR1lGVIJrbiOmg8fzwkG7s=" />
          </item>
    </channel>
 </rss>
