@@ -6,12 +6,12 @@
       <description>Most recent changes with links to updates.</description>
       <language>en</language>
          <item>
-            <title>Version 1.1</title>
+            <title>Version 1.2.1</title>
 						<sparkle:releaseNotesLink>
 							http://vladkorotnev.github.com/soft/mcsm/rnotes.html
 						</sparkle:releaseNotesLink>
             <pubDate>Sun, Mar 10 12:18:58 YEKT 2013</pubDate>
-            <enclosure url="http://vladkorotnev.github.com/soft/mcsm/mcsm.zip" sparkle:version="1.2" length="1461155" type="application/octet-stream" sparkle:dsaSignature="MCwCFEmNCJKcLuwqtoc9swkknaq6PZ8iAhQhpjs91jYk9JcAs3oGggP7h/X/Xw==" />
+            <enclosure url="http://vladkorotnev.github.com/soft/mcsm/mcsm.zip" sparkle:version="1.2.1" length="1461128" type="application/octet-stream" sparkle:dsaSignature="MC4CFQDADxvQSdGIbynPmwTY5y/7Ynar7QIVAIyynwjBeTruYPEFVKahOtcfyE6r" />
          </item>
    </channel>
 </rss>
