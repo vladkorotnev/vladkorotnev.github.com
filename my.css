@@ -21,6 +21,7 @@
       color: #000;
       text-shadow:0px 0px 30px rgba(0,0,0,.74)
     }
+    
      .hero-container{
 	   
 	    margin-left: 15%;
@@ -124,6 +125,15 @@
       	float: right;
       	margin-right: 12%;
       height: 500px;
+     /* clear: both;*/
+    }
+    .carousel .macpro  {
+      top: 150px;
+     
+      	position: relative;
+      	float: right;
+      	margin-right: 12%;
+      height: 300px;
      /* clear: both;*/
     }
     .carousel-caption {
