@@ -11,7 +11,7 @@
 							http://vladkorotnev.github.com/soft/gbb/rnotes.html
 						</sparkle:releaseNotesLink>
             <pubDate>Sun, Mar 10 12:18:58 YEKT 2013</pubDate>
-            <enclosure url="http://vladkorotnev.github.com/soft/gbb/gbb-osx.zip" sparkle:version="1.9.6" length="1628176" type="application/octet-stream" sparkle:dsaSignature="MCwCFQChxqzpgboFZ4+da7oqwPeRii7AHAITRXAPTJ9Jz1gHbKH9o813eifkcQ==" />
+            <enclosure url="http://vladkorotnev.github.com/soft/gbb/gbb-osx.zip" sparkle:version="1.96" length="1628176" type="application/octet-stream" sparkle:dsaSignature="MCwCFQChxqzpgboFZ4+da7oqwPeRii7AHAITRXAPTJ9Jz1gHbKH9o813eifkcQ==" />
          </item>
    </channel>
 </rss>
