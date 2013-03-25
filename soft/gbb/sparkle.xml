@@ -6,12 +6,12 @@
       <description>Most recent changes with links to updates.</description>
       <language>en</language>
          <item>
-            <title>Version 1.9.5</title>
+            <title>Version 1.9.6</title>
 						<sparkle:releaseNotesLink>
 							http://vladkorotnev.github.com/soft/gbb/rnotes.html
 						</sparkle:releaseNotesLink>
             <pubDate>Sun, Mar 10 12:18:58 YEKT 2013</pubDate>
-            <enclosure url="http://vladkorotnev.github.com/soft/gbb/gbb-osx.zip" sparkle:version="1.9.5" length="1626836" type="application/octet-stream" sparkle:dsaSignature="MC0CFQC38SH9y4hK1rY1iwlfNzPrx6vp4gIUG42FK+mNIGm6dS/1BMi1oxzxIFw=" />
+            <enclosure url="http://vladkorotnev.github.com/soft/gbb/gbb-osx.zip" sparkle:version="1.9.6" length="1628176" type="application/octet-stream" sparkle:dsaSignature="MCwCFQChxqzpgboFZ4+da7oqwPeRii7AHAITRXAPTJ9Jz1gHbKH9o813eifkcQ==" />
          </item>
    </channel>
 </rss>
