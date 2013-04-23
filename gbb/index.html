@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>GBBrowser — the ultimate imageboard toolkit</title>
+    <meta charset="utf-8">
 
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <!-- Bootstrap -->
@@ -21,8 +22,26 @@
       })();
     
     </script>
+    <script type="text/javascript">
+    function glowing(n)
+{
+  var tscode="";
+  for(var i=0;i<6;i++)
+  {
+    var x=(n+1536-i*256)%1536;
+    var radius=parseInt(8+8*i,10)+"px";
+    var r=(x<=255? 255: (x<512? 511-x: (x<1024? 0: (x<1280? x-1024: 255))));
+    var v=(x<=255? x: (x<768? 255: (x<1024? 1023-x: 0)));
+    var b=(x<=512? 0: (x<768? x-512: (x<1280? 255: 1535-x)));
+    tscode+="0px 0px "+radius+" rgb("+r+","+v+","+b+")"+(i<5?", ":"");
+  }
+
+  $("#glowing").css("text-shadow",tscode);
+  setTimeout("glowing("+((n+16)%1536)+")",30);
+}
+</script>
   </head>
-  <body>
+  <body onload="glowing(0);">
     <div class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-inner">
     <a class="brand" href="http://vladkorotnev.github.com">&nbsp;&nbsp;GBBrowser</a>
@@ -30,6 +49,7 @@
       <li><a href="mac/index.html">For Mac</a></li>
       <li><a href="ios/index.html">For iOS</a></li>
       <li><a href="windows/index.html">For Windows</a></li>
+      <li class="active"><a href="dkmk/index.html">DakiMaker <small><font color=#ff5555>coming soon</font></small></a></li>
       <li><a href="http://www.youtube.com/watch?v=2Zn6UfRaqWc&list=PLOhXWhc6IwIEzKVXOJpLxVfBKLOWf4-c2&index=1" >Video</a>
     </ul>
   </div>
@@ -38,7 +58,17 @@
 <meta name="apple-itunes-app" content="app-id=602644722">
 <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
-        <div class="item active">
+      <div class="item active">
+          <img src="" class="blackrockshooter" alt="">
+          <div class="container">
+            <div class="carousel-caption-centered">
+              <h1 id="glowing">And so it begins</h1>
+              <p class="lead">If you like some anime character so much you would spend your life with it — this is surely the service you've been waiting for.</p>
+              <a class="btn btn-large btn-primary" href="dkmk/index.html">Have a sneak peek</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
           <img src="img/main-slides/macintosh.png" alt="" class="macintosh">
           <div class="container">
             <div class="carousel-caption">

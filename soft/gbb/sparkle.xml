@@ -7,6 +7,7 @@
       <language>en</language>
          <item>
             <title>Version 1.9.8</title>
+    <meta charset="utf-8">
 						<sparkle:releaseNotesLink>
 							http://vladkorotnev.github.com/soft/gbb/rnotes.html
 						</sparkle:releaseNotesLink>

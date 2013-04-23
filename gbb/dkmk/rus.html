@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coming soon!</title>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="my.css" rel="stylesheet" media="screen">
+    <script type="text/javascript">
+    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-24659572-1']);
+      _gaq.push(['_setDomainName', 'github.io']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+      function glowing(n)
+{
+  var tscode="";
+  for(var i=0;i<6;i++)
+  {
+    var x=(n+1536-i*256)%1536;
+    var radius=parseInt(8+8*i,10)+"px";
+    var r=(x<=255? 255: (x<512? 511-x: (x<1024? 0: (x<1280? x-1024: 255))));
+    var v=(x<=255? x: (x<768? 255: (x<1024? 1023-x: 0)));
+    var b=(x<=512? 0: (x<768? x-512: (x<1280? 255: 1535-x)));
+    tscode+="0px 0px "+radius+" rgb("+r+","+v+","+b+")"+(i<5?", ":"");
+  }
+
+  $("#glowing").css("text-shadow",tscode);
+  setTimeout("glowing("+((n+16)%1536)+")",30);
+}
+
+    </script>
+<!--    <script type="text/javascript">
+    	function chara() {
+    		var names = ["Shana","Yui","Yuki","Haruhi","Kirino","Azu-nyan"];
+    		// if you're really interested in what you're browsing I hope I don't have to explain you where did I get these
+	    	document.getElementById("thought").innerHTML = "<h1>Uhh... I wish " + names[Math.floor(Math.random() * names.length)] + " was here right now...</h1>";
+    	}
+    </script> -->
+  </head>
+  <body onload="glowing(0);">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <a class="brand" href="http://vladkorotnev.github.com">&nbsp;&nbsp;GBBrowser</a>
+    <ul class="nav">
+      <li><a href="../mac/index.html">For Mac</a></li>
+      <li><a href="../ios/index.html">For iOS</a></li>
+      <li><a href="../windows/index.html">For Windows</a></li>
+      <li class="active"><a href="">DakiMaker</a></li>
+      <li><a href="index.html"><small><font color=#ff5555>in English</font></small></a></li>
+      <li><a href="http://www.youtube.com/watch?v=2Zn6UfRaqWc&list=PLOhXWhc6IwIEzKVXOJpLxVfBKLOWf4-c2&index=1" >Video</a>
+    </ul>
+  </div>
+</div>
+<div id="properContent" class="proper-content">
+<meta name="apple-itunes-app" content="app-id=602644722">
+<div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="" class="xcode" data-type="background" alt="">
+          <div class="container">
+          <center>
+            <div class="carousel-caption">
+           	 <h1><p id="glowing">Итак, процесс пошел</p></h1><br>
+            	<p class="lead">Если вам нравится аниме-персонаж настолько, что вы готовы были бы провести с ним всю жизнь, то это точно сервис, которого вы ждали.</p>
+             <!-- <a class="btn btn-large btn-primary dropdown-toggle" href="#"> Learn more </a> -->
+            </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+       
+<div class="container marketing">
+<div class="statuses">
+<p><strong>Прогресс проекта:</strong> осталось примерно 2 месяца</p><br>
+<div class="progress progress-info progress-striped active">
+  <div class="bar" style="width: 30%"></div>
+</div>
+
+<p><strong>Веб-версия:</strong> Основные API</p><br>
+<div class="progress progress-warning progress-striped">
+  <div class="bar" style="width: 15%"></div>
+</div>
+
+
+<p><strong>iOS:</strong> Дизайн интерфейса и иконок</p><br>
+   <div class="progress progress-success progress-striped active">
+  <div class="bar" style="width: 75%"></div></div>
+
+<p><strong>Mac:</strong> Основные сервисы и API</p><br>
+<div class="progress progress-warning progress-striped active">
+  <div class="bar" style="width: 20%"></div>
+</div>
+
+<p><strong>Windows:</strong> Планирование</p><br>
+<div class="progress progress-danger progress-striped">
+  <div class="bar" style="width: 10%"></div>
+</div>
+
+</div>
+ <hr class="featurette-divider">
+
+<h2 class="hilite white centered">Предисловие от автора</h2>
+
+<div class="whitetext">Изначально этот сервис был придуман как шутка во время одного из разговоров в твиттере. Я даже и не думал создавать его. Но одним прекрасным днем на меня снизошло, если можно сказать, озарение — я понял, что этот сервис надо сделать, также как я когда-то сделал GBBrowser, начав с простого .net-прототипа его. Потому что у нас есть общая страсть. Не только страсть к отполированным до блеска программам, но и страсть к аниме. И так как я в тот момент просматривал очередной интернет-магазин, я подумал — а какого черта все это стоит так дорого? И почему при таких ценах практически невозможно найти то, что тебе бы понравилось? И почему, в конце концов, страннику сети нужно обойти половину интернет магазинов, чтобы найти хоть что-то понравившееся, при том, что есть вероятность, что такого он не найдет? И процесс пошел. Говорят, что люди не начинают делать то, что они захотели создать потому, что боятся совершить ошибку. Но несмотря на это, я открыл среду разработки и начал писать код на протяжении многих дней. Ради того, чтобы помочь единомышленникам находить то, что должно идеально совпадать с желаемым.</div>
+      <!-- START THE FEATURETTES -->
+ <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="hq.png">
+        <h2 class="featurette-heading">Высококачественная печать. <span class="muted">Возможно, вы даже не заметите того, что это лишь картинка.</span></h2>
+        <p class="lead">Мы используем качественные материалы и высокотехнологичные методы печати чтобы обеспечить наилучшее качество изображения и тактильные ощущения.</p>
+      </div>
+      
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-left" src="main.png">
+        <h2 class="featurette-heading">Возможность полной настройки. <span class="muted">Все по вашему желанию.</span></h2>
+        <p class="lead">Выберите двустороннюю картинку, объедините две таких или же выберите каждую сторону по отдельности. Программа проверит, все ли в порядке, и если что-то не так, предупредит вас.</p>
+      </div>
+
+     
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="folder.png">
+        <h2 class="featurette-heading">Галерея готовых изображений. <span class="muted">Тысячи их.</span></h2>
+        <p class="lead">Также мы предоставляем более тысячи готовых двусторонних изображений для загрузки, применения и комбинирования. Таким образом вы точно найдете себе что-нибудь по вкусу.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+ <div class="featurette">
+        <img class="featurette-image pull-left" src="payp.png">
+        <h2 class="featurette-heading">Ваши данные в безопасности. <span class="muted">При помощи PayPal.</span></h2>
+        <p class="lead">Оплатите с помощью карты, банковского счета или счета в PayPal, и не волнуйтесь по поводу своих данных — мы получаем только те данные, которые нужны, чтобы доставить вам товар, а кроме нас узнать ваши данные не сможет вообще никто.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+   </div>
+   <div class="hero-container">
+<div class="hero-subclassed">
+
+    <center><img src="reimu.png" alt="Image credit: pon (0737)"></center>
+
+
+  <center><h1>Все это и многое другое.</h1></center>
+
+  <center><p class="whitetext">
+    Скоро для iOS, Mac и Windows.
+    Или даже для любой платформы, с которой вы можете выйти в интернет.</center>
+  </p>
+</div>
+</div>
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Наверх</a></p>
+        <p><small>© 2013 vladkorotnev. Все изображения интерфейса симулированы. Внешний вид продукции может варьироваться. Нижняя иллюстрация от pon(0737).</small></p>
+      </footer>
+
+    </div>
+       </div>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
