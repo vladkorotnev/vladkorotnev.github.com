@@ -36,6 +36,39 @@
   setTimeout("glowing("+((n+16)%1536)+")",30);
 }
 
+var wk=0;
+var wdir=false;
+var wdec=0;
+
+      function whitey(n)
+{
+  var tscode="";
+ 
+  if(wdir==false){
+	  if (wk == 0) {
+		  wdir= true;  
+	} else {
+		wk=wk-1;
+	} 
+	
+  } else {
+	  if (wk == 255) {
+	  if(wdec < 144) {
+		  wdec = wdec + 1;
+		 } else {
+		  wdir= false;  }
+	} else {
+		wk=wk+1;
+	} 
+	  
+  }
+ tscode+="0px 0px 10px rgba("+wk+","+wk+","+wk+", 255)";
+
+  $("#whitey").css("text-shadow",tscode);
+  setTimeout("whitey()",5);
+}
+
+
     </script>
 <!--    <script type="text/javascript">
     	function chara() {
@@ -45,7 +78,7 @@
     	}
     </script> -->
   </head>
-  <body onload="glowing(0);">
+  <body onload="glowing(0); whitey(0);">
     <div class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-inner">
     <a class="brand" href="http://vladkorotnev.github.com">&nbsp;&nbsp;GBBrowser</a>
@@ -157,7 +190,7 @@
     <center><img src="reimu.png" alt="Image credit: pon (0737)"></center>
 
 
-  <center><h1>Все это и многое другое.</h1></center>
+  <center><h1 id="whitey">Все это и многое другое.</h1></center>
 
   <center><p class="whitetext">
     Скоро для iOS, Mac и Windows.
