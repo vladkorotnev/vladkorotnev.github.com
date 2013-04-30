@@ -37,35 +37,32 @@
 }
 
 var wk=0;
-var wdir=false;
-var wdec=0;
+var bk=-2;
 
       function whitey(n)
 {
   var tscode="";
  
-  if(wdir==false){
-	  if (wk == 0) {
-		  wdir= true;  
+  
+	 if (wk >= 255) {
+	  wk=0;
 	} else {
-		wk=wk-1;
+		wk=255;
 	} 
-	
-  } else {
-	  if (wk == 255) {
-	  if(wdec < 144) {
-		  wdec = wdec + 1;
-		 } else {
-		  wdir= false;  }
+	  if (bk >= 1) {
+	  bk=-2;
 	} else {
-		wk=wk+1;
+		bk=2;
 	} 
 	  
-  }
+  
  tscode+="0px 0px 10px rgba("+wk+","+wk+","+wk+", 255)";
 
   $("#whitey").css("text-shadow",tscode);
-  setTimeout("whitey()",5);
+  bpcode=(130+bk)+"%";
+  $("body").css("background-size",bpcode);
+ 
+  setTimeout("whitey()",2500);
 }
 
 
@@ -78,7 +75,7 @@ var wdec=0;
     	}
     </script> -->
   </head>
-  <body onload="glowing(0); whitey(0);">
+  <body onload="whitey(0);">
     <div class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-inner">
     <a class="brand" href="http://vladkorotnev.github.com">&nbsp;&nbsp;GBBrowser</a>
@@ -86,104 +83,28 @@ var wdec=0;
       <li><a href="../mac/index.html">For Mac</a></li>
       <li><a href="../ios/index.html">For iOS</a></li>
       <li><a href="../windows/index.html">For Windows</a></li>
-      <li class="active"><a href="">DakiMaker</a></li>
-      <li><a href="index.html"><small><font color=#ff5555>in English</font></small></a></li>
-      <li><a href="http://www.youtube.com/watch?v=2Zn6UfRaqWc&list=PLOhXWhc6IwIEzKVXOJpLxVfBKLOWf4-c2&index=1" >Video</a>
     </ul>
   </div>
 </div>
 <div id="properContent" class="proper-content">
-<meta name="apple-itunes-app" content="app-id=602644722">
-<div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="" class="xcode" data-type="background" alt="">
-          <div class="container">
-          <center>
-            <div class="carousel-caption">
-           	 <h1><p id="glowing">Итак, процесс пошел</p></h1><br>
-            	<p class="lead">Если вам нравится аниме-персонаж настолько, что вы готовы были бы провести с ним всю жизнь, то это точно сервис, которого вы ждали.</p>
+</div>
+<div class="unblur">
+
+<center style="margin-top:25%; margin-bottom:25%">
+
+           	 <h1><p id="whitey">Осталось совсем немного</p></h1><br>
+            	<div class="progress pbar progress-success progress-striped active" style="margin-left:25%; margin-right:25%;">
+  <div class="bar" style="width: 70%;"></div>
+</div>
              <!-- <a class="btn btn-large btn-primary dropdown-toggle" href="#"> Learn more </a> -->
             </center>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+</div>
        
-<div class="container marketing">
-<div class="statuses">
-<p><strong>Прогресс проекта:</strong> Тестирование, безопасность, поиск сервера, финальная полировка. Осталось примерно 1-2 месяца</p><br>
-<div class="progress progress-info progress-striped active">
-  <div class="bar" style="width: 55%"></div>
-</div>
-
-</div>
- <hr class="featurette-divider">
-
-<h2 class="hilite white centered">Предисловие от автора</h2>
-
-<div class="whitetext">Изначально этот сервис был придуман как шутка во время одного из разговоров в твиттере. Я даже и не думал создавать его. Но одним прекрасным днем на меня снизошло, если можно сказать, озарение — я понял, что этот сервис надо сделать, также как я когда-то сделал GBBrowser, начав с простого .net-прототипа его. Потому что у нас есть общая страсть. Не только страсть к отполированным до блеска программам, но и страсть к аниме. И так как я в тот момент просматривал очередной интернет-магазин, я подумал — а какого черта все это стоит так дорого? И почему при таких ценах практически невозможно найти то, что тебе бы понравилось? И почему, в конце концов, страннику сети нужно обойти половину интернет магазинов, чтобы найти хоть что-то понравившееся, при том, что есть вероятность, что такого он не найдет? И процесс пошел. Говорят, что люди не начинают делать то, что они захотели создать потому, что боятся совершить ошибку. Но несмотря на это, я открыл среду разработки и начал писать код на протяжении многих дней. Ради того, чтобы помочь единомышленникам находить то, что должно идеально совпадать с желаемым.</div>
-      <!-- START THE FEATURETTES -->
- <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image pull-right" src="hq.png">
-        <h2 class="featurette-heading">Высококачественная печать. <span class="muted">Возможно, вы даже не заметите того, что это лишь картинка.</span></h2>
-        <p class="lead">Мы используем качественные материалы и высокотехнологичные методы печати чтобы обеспечить наилучшее качество изображения и тактильные ощущения.</p>
-      </div>
-      
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image centered" src="main.png">
-        <h2 class="featurette-heading">Возможность полной настройки. <span class="muted">Все по вашему желанию.</span></h2>
-        <p class="lead">Выберите двустороннюю картинку, объедините две таких или же выберите каждую сторону по отдельности. Программа проверит, все ли в порядке, и если что-то не так, предупредит вас.</p>
-      </div>
-
-     
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image centered" src="gallery.png">
-        <h2 class="featurette-heading">Галерея готовых изображений. <span class="muted">Тысячи их.</span></h2>
-        <p class="lead">Также мы предоставляем более тысячи готовых двусторонних изображений для загрузки, применения и комбинирования. Таким образом вы точно найдете себе что-нибудь по вкусу.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
- <div class="featurette">
-        <!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/bdg_secured_by_pp_2line.png" border="0" alt="Secured by PayPal"></a><div style="text-align:center"><a href="https://www.paypal.com/webapps/mpp/how-paypal-works"><font size="2" face="Arial" color="#0079CD"><b>How PayPal Works</b></font></a></div></td></tr></table><!-- PayPal Logo -->
-        <h2 class="featurette-heading">Ваши данные в безопасности. <span class="muted">При помощи PayPal.</span></h2>
-        <p class="lead">Оплатите с помощью карты, банковского счета или счета в PayPal, и не волнуйтесь по поводу своих данных — мы получаем только те данные, которые нужны, чтобы доставить вам товар, а кроме нас узнать ваши данные не сможет вообще никто.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-   </div>
-   <div class="hero-container">
-<div class="hero-subclassed">
-
-    <center><img src="reimu.png" alt="Image credit: pon (0737)"></center>
-
-
-  <center><h1 id="whitey">Все это и многое другое.</h1></center>
-
-  <center><p class="whitetext">
-    Скоро для iOS, Mac и Windows.
-    Или даже для любой платформы, с которой вы можете выйти в интернет.</center>
-  </p>
-</div>
-</div>
-
-      <!-- FOOTER -->
+      <!-- FOOTER 
       <footer>
         <p class="pull-right"><a href="#">Наверх</a></p>
         <p><small>© 2013 vladkorotnev. Все изображения интерфейса симулированы. Внешний вид продукции может варьироваться. Нижняя иллюстрация от pon(0737).</small></p>
-      </footer>
+      </footer>-->
 
     </div>
        </div>

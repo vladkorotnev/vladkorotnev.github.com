@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- A fucking hour on such simple page -->
 <html>
   <head>
     <title>Coming soon!</title>
@@ -37,35 +38,32 @@
 }
 
 var wk=0;
-var wdir=false;
-var wdec=0;
+var bk=-2;
 
       function whitey(n)
 {
   var tscode="";
  
-  if(wdir==false){
-	  if (wk == 0) {
-		  wdir= true;  
+  
+	 if (wk >= 255) {
+	  wk=0;
 	} else {
-		wk=wk-1;
+		wk=255;
 	} 
-	
-  } else {
-	  if (wk == 255) {
-	  if(wdec < 144) {
-		  wdec = wdec + 1;
-		 } else {
-		  wdir= false;  }
+	  if (bk >= 1) {
+	  bk=-2;
 	} else {
-		wk=wk+1;
+		bk=2;
 	} 
 	  
-  }
+  
  tscode+="0px 0px 10px rgba("+wk+","+wk+","+wk+", 255)";
 
   $("#whitey").css("text-shadow",tscode);
-  setTimeout("whitey()",5);
+  bpcode=(130+bk)+"%";
+  $("body").css("background-size",bpcode);
+ 
+  setTimeout("whitey()",2500);
 }
 
 
@@ -78,7 +76,7 @@ var wdec=0;
     	}
     </script> -->
   </head>
-  <body onload="glowing(0);whitey();">
+  <body onload="whitey(0);">
     <div class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-inner">
     <a class="brand" href="http://vladkorotnev.github.com">&nbsp;&nbsp;GBBrowser</a>
@@ -86,107 +84,28 @@ var wdec=0;
       <li><a href="../mac/index.html">For Mac</a></li>
       <li><a href="../ios/index.html">For iOS</a></li>
       <li><a href="../windows/index.html">For Windows</a></li>
-      <li class="active"><a href="">DakiMaker</a></li>
-      <li><a href="rus.html"><small><font color=#ff5555>по-русски</font></small></a></li>
-      <li><a href="http://www.youtube.com/watch?v=2Zn6UfRaqWc&list=PLOhXWhc6IwIEzKVXOJpLxVfBKLOWf4-c2&index=1" >Video</a>
     </ul>
   </div>
 </div>
 <div id="properContent" class="proper-content">
-<meta name="apple-itunes-app" content="app-id=602644722">
-<div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="" class="xcode" data-type="background" alt="">
-          <div class="container">
-          <center>
-            <div class="carousel-caption">
-           	 <h1><p id="glowing">And so it begins</p></h1><br>
-            	<p class="lead">If you like some anime character so much you would spend your life with it — this is surely the service you've been waiting for.</p>
+</div>
+<div class="unblur">
+
+<center style="margin-top:25%; margin-bottom:25%">
+
+           	 <h1><p id="whitey">Just a little bit more time...</p></h1><br>
+            	<div class="progress pbar progress-success progress-striped active" style="margin-left:25%; margin-right:25%;">
+  <div class="bar" style="width: 70%;"></div>
+</div>
              <!-- <a class="btn btn-large btn-primary dropdown-toggle" href="#"> Learn more </a> -->
             </center>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+</div>
        
-<div class="container marketing">
-<div class="statuses">
-
-
-<p><strong>Project progress:</strong> Alpha-testing, security, server purchase, finishing touches. ETA: 1-2 months</p><br>
-<div class="progress progress-info progress-striped active">
-  <div class="bar" style="width: 55%"></div>
-</div>
-
-
-</div>
- <hr class="featurette-divider">
-
-<h2 class="hilite white centered">A foreword from the creator</h2>
-
-<div class="whitetext">Initially this service was invented as a joke during one twitter conversation. I haven't even thought that I would be doing this someday. However, one day I realized, that the reason I created GBBrowser was sharing the same passion with many different people all over the world. Not only the passion for well-designed software, but also the passion for anime. And since at the same time I was browsing an online store, I thought, well, why the hell do those things cost so much? Why, even though they cost a lot, it may be sometimes just too hard to pick one to your liking? And why, after all, does one have to search all the world's online storefronts to find something they will like, with a chance that they will find nothing? And so, this project was started. You know, they say that even though you're afraid of doing something just because you may fail. And even though, I finally got to open the IDE and start coding. So everyone sharing the same thoughts, same passion, will have less problems while searching for something that needs to be perfect.</div>
-      <!-- START THE FEATURETTES -->
- <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image pull-right" src="hq.png">
-        <h2 class="featurette-heading">High-quality printing. <span class="muted">You may not even notice it's not real.</span></h2>
-        <p class="lead">We use an advanced printing technique to ensure the highest possible picture quality.</p>
-      </div>
-      
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image centered" src="main.png">
-        <h2 class="featurette-heading">Fully customizable. <span class="muted">You'll fall in love with it at the first sight.</span></h2>
-        <p class="lead">Either select a 2-in-1 picture you found, choose them one-by-one or combine two double-sided pictures. The app will tell you if there are any problems, and place the order in case it's all fine.</p>
-      </div>
-
-     
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image centered" src="gallery.png">
-        <h2 class="featurette-heading">A gallery of pre-selected images. <span class="muted">Loads of them.</span></h2>
-        <p class="lead">We also provide access to more than a thousand of double-sided images in our gallery. So you can always choose something for yourself.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
- <div class="featurette">
-        <!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/bdg_secured_by_pp_2line.png" border="0" alt="Secured by PayPal"></a><div style="text-align:center"><a href="https://www.paypal.com/webapps/mpp/how-paypal-works"><font size="2" face="Arial" color="#0079CD"><b>How PayPal Works</b></font></a></div></td></tr></table><!-- PayPal Logo -->
-        <h2 class="featurette-heading">Secure handling of your data. <span class="muted">Powered by PayPal.</span></h2>
-        <p class="lead">Pay with a card, with a bank account, or with your PayPal balance and never worry about your data — it's so secure nobody except for us would see you placed an order at all.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-   </div>
-   <div class="hero-container">
-<div class="hero-subclassed">
-
-    <center><img src="reimu.png" alt="Image credit: pon (0737)"></center>
-
-
-  <center><h1 id="whitey">All of this and even more.</h1></center>
-
-  <center><p class="whitetext">
-    Coming soon to iOS, Mac and Windows.
-    Or pretty much any platform you can browse the web from.</center>
-  </p>
-</div>
-</div>
-
-      <!-- FOOTER -->
+      <!-- FOOTER 
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p><small>© 2013 vladkorotnev. All user interfaces and images are simulated. Product picture and design are subject to change without prior notification. Bottom image credit: pon(0737).</small></p>
-      </footer>
+        <p class="pull-right"><a href="#">Наверх</a></p>
+        <p><small>© 2013 vladkorotnev. Все изображения интерфейса симулированы. Внешний вид продукции может варьироваться. Нижняя иллюстрация от pon(0737).</small></p>
+      </footer>-->
 
     </div>
        </div>
