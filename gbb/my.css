@@ -11,7 +11,11 @@
             background-image: url("../office.png");
       background-repeat: repeat;
     }
+.navbar-inner{
+    background:transparent !important;
+    background-color: rgba(0,0,0,0.76) !important;
 
+    }
 .proper-content {
     padding-top: 70px; /* >= navbar height */
 }

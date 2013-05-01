@@ -11,6 +11,11 @@
       background-repeat: repeat;
       background-color: white;
     }
+ .navbar-inner{
+    background:transparent !important;
+    background-color: rgba(0,0,0,0.76) !important;
+
+    }
 
 .proper-content {
     padding-top: 70px; /* >= navbar height */
