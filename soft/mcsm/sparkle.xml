@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
    <channel>
       <title>MCServMan's Changelog</title>
-      <link>http://vladkorotnev.github.com/soft/mcsm/sparkle.xml</link>
+      <link>http://vladkorotnev.github.io/soft/mcsm/sparkle.xml</link>
       <description>Most recent changes with links to updates.</description>
       <language>en</language>
          <item>
             <title>Version 1.3.6</title>
     <meta charset="utf-8">
 						<sparkle:releaseNotesLink>
-							http://vladkorotnev.github.com/soft/mcsm/rnotes.html
+							http://vladkorotnev.github.io/soft/mcsm/rnotes.html
 						</sparkle:releaseNotesLink>
             <pubDate>Sun, Mar 10 12:18:58 YEKT 2013</pubDate>
-            <enclosure url="http://vladkorotnev.github.com/soft/mcsm/mcsm.zip" sparkle:version="1.3.6" length="1604333" type="application/octet-stream" sparkle:dsaSignature="MC0CFQCdW+Xi0ACkTdWsh2xmLbaTWuTWGwIUBMFXpplOxpH+nkiDblc2Di+X/V0=" />
+            <enclosure url="http://vladkorotnev.github.io/soft/mcsm/mcsm.zip" sparkle:version="1.3.6" length="1604333" type="application/octet-stream" sparkle:dsaSignature="MC0CFQCdW+Xi0ACkTdWsh2xmLbaTWuTWGwIUBMFXpplOxpH+nkiDblc2Di+X/V0=" />
          </item>
    </channel>
 </rss>

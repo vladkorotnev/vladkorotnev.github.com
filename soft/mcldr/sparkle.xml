@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
    <channel>
       <title>MCLoader Changelog</title>
-      <link>http://vladkorotnev.github.com/soft/mcsm/sparkle.xml</link>
+      <link>http://vladkorotnev.github.io/soft/mcsm/sparkle.xml</link>
       <description>Most recent changes with links to updates.</description>
       <language>en</language>
          <item>
             <title>Version 1.1</title>
     <meta charset="utf-8">
 						<sparkle:releaseNotesLink>
-							http://vladkorotnev.github.com/soft/mcldr/rnotes.html
+							http://vladkorotnev.github.io/soft/mcldr/rnotes.html
 						</sparkle:releaseNotesLink>
             <pubDate>Sun, Mar 10 12:18:58 YEKT 2013</pubDate>
-            <enclosure url="http://vladkorotnev.github.com/soft/mcldr/mcloader.zip" sparkle:version="1.8" length="1534562" type="application/octet-stream" sparkle:dsaSignature="MCwCFBd2AYL5z/k000Kbq6NANyZ21ob0AhRObtbULGJtYftW2UjRzUde4B1iiQ==" />
+            <enclosure url="http://vladkorotnev.github.io/soft/mcldr/mcloader.zip" sparkle:version="1.8" length="1534562" type="application/octet-stream" sparkle:dsaSignature="MCwCFBd2AYL5z/k000Kbq6NANyZ21ob0AhRObtbULGJtYftW2UjRzUde4B1iiQ==" />
          </item>
    </channel>
 </rss>
