@@ -10,6 +10,9 @@
       background-repeat: repeat;
       background-color: white;
     }
+    footer > p.pull-right {
+	    display: none;
+    }
  .navbar-inner{
     background:transparent !important;
     background-color: rgba(0,0,0,0.76) !important;
@@ -155,10 +158,10 @@
     ------------------------- */
 
     .featurette-divider {
-    background-color: #515151;
-    border-color: #494949; /* Space out the Bootstrap <hr> more */
-    margin-bottom: 41px;
-    margin-top: 41px;
+    background-color: #bbb;
+    border-color: #bbb; /* Space out the Bootstrap <hr> more */
+    margin-bottom: 20px;
+    margin-top: 20px;
     }
     .featurette {
       padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
@@ -192,85 +195,4 @@
 
 
 
-    /* RESPONSIVE CSS
-    -------------------------------------------------- 
-
-    @media (max-width: 979px) {
-
-      .container.navbar-wrapper {
-        margin-bottom: 0;
-        width: auto;
-      }
-      .navbar-inner {
-        border-radius: 0;
-        margin: -20px 0;
-      }
-
-      .carousel .item {
-        height: 500px;
-      }
-      .carousel img {
-        width: auto;
-        height: 500px;
-      }
-
-      .featurette {
-        height: auto;
-        padding: 0;
-      }
-      .featurette-image.pull-left,
-      .featurette-image.pull-right {
-        display: block;
-        float: none;
-        max-width: 40%;
-        margin: 0 auto 20px;
-      }
-    }
-
-
-    @media (max-width: 767px) {
-
-      .navbar-inner {
-        margin: -20px;
-      }
-
-      .carousel {
-        margin-left: -20px;
-        margin-right: -20px;
-      }
-      .carousel .container {
-
-      }
-      .carousel .item {
-        height: 300px;
-      }
-      .carousel img {
-        height: 300px;
-      }
-      .carousel-caption {
-        width: 65%;
-        padding: 0 70px;
-        margin-top: 100px;
-      }
-      .carousel-caption h1 {
-        font-size: 30px;
-      }
-      .carousel-caption .lead,
-      .carousel-caption .btn {
-        font-size: 18px;
-      }
-
-      .marketing .span4 + .span4 {
-        margin-top: 40px;
-      }
-
-      .featurette-heading {
-        font-size: 30px;
-      }
-      .featurette .lead {
-        font-size: 18px;
-        line-height: 1.5;
-      }
-
-    }*/
-    
+   
