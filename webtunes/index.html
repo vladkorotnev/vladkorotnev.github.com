@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>vladkorotnev software</title>
+    <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Exo+2:400,100&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- Bootstrap -->
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+   
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../my.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+    html, body {  overflow-x:hidden !important;}
+    .revealizer {
+	     top: 560px;
+	     position: absolute;
+	     left: 0px;
+	     width: 100%;
+	     height: 100%;
+	     background: #fff;
+	     opacity: 1;
+	     z-index: 9999;
+	         transition-property:all;
+	    transition-duration: 1s;
+	    transition-timing-function: linear;
+	    -webkit-transition-property: all;
+	    -webkit-transition-timing-function: linear;
+	    -webkit-transition-duration: 1s;
+	    -moz-transition-property:all;
+	    -moz-transition-timing-function: linear;
+	    -moz-transition-duration: 1s;
+     }
+     .revealizer.revealed { opacity: 0;
+	             }
+p { font-family: 'Exo 2', sans-serif; font-size:25px; font-weight: 100;}
+        .thinnest, .featurette-heading { font-family: 'Exo 2', sans-serif !important;  font-weight: 100 !important;}
+    .thinnest.huge { font-size: 50px !important;}
+    .thinnest.headliner {text-align: center;}
+    .headliner { font-size: 25px;}
+    
+    .headliner.preintro {
+	    top: 100%;  left:700px; right:auto; position: absolute; opacity: 0;
+	    transition-property:all;
+	    transition-duration: 1s;
+	    transition-timing-function: ease-out;
+	    -webkit-transition-property: all;
+	    -webkit-transition-timing-function: ease-out;
+	    -webkit-transition-duration: 1s;
+	    -moz-transition-property:all;
+	    -moz-transition-timing-function: ease-out;
+	    -moz-transition-duration: 1s;
+	    
+    }
+    .computer { max-height: 500px; height: 500px; width: auto; top: 55px;}
+    .cellphone { max-height: 500px; height: 300px; width: auto; top: 255px;}
+    .computer.preintro {
+	    left:-50px; right:auto; position: absolute; opacity: 0;
+	    transition-property:all;
+	    transition-duration: 1s;
+	    transition-timing-function: ease-out;
+	    -webkit-transition-property: all;
+	    -webkit-transition-timing-function: ease-out;
+	    -webkit-transition-duration: 1s;
+	    -moz-transition-property:all;
+	    -moz-transition-timing-function: ease-out;
+	    -moz-transition-duration: 1s;
+    }
+    .cellphone.preintro {
+	    left:-30px; right:auto; position: absolute; opacity: 0;
+	    transition-property:all;
+	    transition-duration: 1s;
+	    transition-timing-function: ease-out;
+	    -webkit-transition-property: all;
+	    -webkit-transition-timing-function: ease-out;
+	    -webkit-transition-duration: 1s;
+	    -moz-transition-property:all;
+	    -moz-transition-timing-function: ease-out;
+	    -moz-transition-duration: 1s;
+    }
+    .cellphone.introing {
+	    left:500px; right:auto; position: absolute; opacity: 1;
+	    transition-property:all;
+	    transition-duration: 1s;
+	    transition-timing-function: ease-out;
+	    -webkit-transition-property: all;
+	    -webkit-transition-timing-function: ease-out;
+	    -webkit-transition-duration: 1s;
+	    -moz-transition-property:all;
+	    -moz-transition-timing-function: ease-out;
+	    -moz-transition-duration: 1s;
+    }
+
+    .computer.introing {left:50px; right:auto; position: absolute; opacity: 1;
+	    transition-property:all;
+	    transition-duration: 1s;
+	    transition-timing-function: ease-out;
+	    -webkit-transition-property: all;
+	    -webkit-transition-timing-function: ease-out;
+	    -webkit-transition-duration: 1s;
+	    -moz-transition-property:all;
+	    -moz-transition-timing-function: ease-out;
+	    -moz-transition-duration: 1s; 
+    }
+    .headliner.introing {
+	    top: 55px; left:700px; right:auto; position: absolute; opacity: 1;
+	    transition-property: all;
+	    transition-duration: 1s;
+	    transition-timing-function: ease-out;
+	    -webkit-transition-property: all;
+	    -webkit-transition-duration: 1s;
+	    -webkit-transition-timing-function: ease-out;
+	    -moz-transition-property: all;
+	    -moz-transition-timing-function: ease-out;
+	    -moz-transition-duration: 1s;
+    }
+    .headliner.sub.preintro {
+	    top: 120px;  left:550px; right:auto; position: absolute; opacity: 0;
+	    transition-property:all;
+	    transition-duration: 1s;
+	    transition-timing-function: ease-out;
+	    -webkit-transition-property: all;
+	    -webkit-transition-timing-function: ease-out;
+	    -webkit-transition-duration: 1s;
+	    -moz-transition-property:all;
+	    -moz-transition-timing-function: ease-out;
+	    -moz-transition-duration: 1s;
+	    
+    }
+     .headliner.sub.introing {
+	    top: 120px;left:750px; right:auto; position: absolute; opacity: 1;
+	    transition-property: all;
+	    transition-duration: 1s;
+	    transition-timing-function: ease-out;
+	    -webkit-transition-property: all;
+	    -webkit-transition-duration: 1s;
+	    -webkit-transition-timing-function: ease-out;
+	    -moz-transition-property: all;
+	    -moz-transition-timing-function: ease-out;
+	    -moz-transition-duration: 1s;
+    }
+    .fileicon { height:130px;max-height: 130px;}
+    #scene-container { height: 560px; width: 100%;}
+    li { list-style-type: none;}
+    .wt-insert { background: url('wt.png');
+	    height: 300px;
+box-shadow: -4px 0px 10px 0px #000 inset, 0px 0px 0px 0px #fff inset, 0px 0px 0px 0px #fff inset,0px 0px 0px 0px #fff inset;
+background-attachment: initial;
+background-repeat: no-repeat;
+background-position-x: center;
+background-size: cover;
+max-height: 300px;
+width: 105%;
+left: -2%;
+
+	    
+	    
+    }
+    </style>
+    <script type="text/javascript">
+    function reveal() {
+	    $('.revealizer').addClass('revealed');
+	    setTimeout(function() { $('.revealizer').remove() }, 1002);
+	    document.body.style.overflow = "scroll";  document.body.style["overflow-x"] = "hidden";
+	    $('html').css('overflow-x: hidden; overflow-y:scroll; ');
+    }
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-24659572-1']);
+      _gaq.push(['_setDomainName', 'github.io']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    function introItem(item) { 
+	    $(item).removeClass('preintro').addClass('introing');
+    }
+    $(document).ready(function() {
+     $('#scene').parallax();$('#scene').parallax('disable');
+     introItem("#headline1");
+	    setTimeout(function(){introItem(".computer")}, 1500);
+	    setTimeout(function(){introItem(".cellphone")}, 2000);
+	    setTimeout(function(){introItem("#headline2")}, 2200);
+	    setTimeout(function(){$('#scene').parallax('enable');reveal();}, 3500);
+	});
+    </script>
+  </head>
+  <body>
+      <div class="navbar navbar-default navbar-fixed-top">
+	     <div class="navbar-header"> <ul class="nav navbar-nav">
+    <a class="navbar-brand" href="http://vladkorotnev.github.io">&nbsp;&nbsp;vladkorotnev software</a>
+     <li class="active"> <a href="webtunes/index.html">WebTunes</a> </li>
+   <li> <a href="mcsm/index.html">MCSM</a> </li>
+   <li> <a href="gbb/index.html">GBBrowser</a> </li>
+   <li> <a href="learnit/index.html">LearnIt</a> </li>
+   <li>   <a href="radio/index.html">Radio</a> </li>
+    <li>  <a href="down/index.html">Downloads</a> </li>
+   <li>   <a href="donation/index.html">Donate</a> </li>
+   <li>   <a href="contact/index.html">Contact</a> </li> </ul>
+	     </div>
+</div>
+<div id="scene-container">
+  <ul id="scene">
+	 <li class="layer" data-depth="0.20"> <p id="headline1" class="thinnest huge headliner preintro" >WebTunes + PortaTune</p> <p id="headline2" class="thinnest huge headliner sub preintro" >Take your music wherever you go.</p></li>
+	 <li class="layer" data-depth="0.30"> <img class="computer preintro" src="imac.png"> </li>
+	 <li class="layer" data-depth="0.40">  <img class="cellphone preintro" src="iphone.png"> </li>
+  </ul></div>
+
+
+<div class="revealizer"></div>
+<div class="container marketing"><a name="webtunes"></a>
+         <center><h1 class="thinnest huge">What is WebTunes?</h1></center>
+   <p style="text-align:center">
+   	WebTunes is a music library webapp that allows you to listen to music wherever you go! You just need a computer with a modern web browser and an internet connection. Log in with your password — and you're good to go!
+   </p>
+   <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-left fileicon" src="audiofile.png"><img class="featurette-image pull-left fileicon" src="flac.png"><img class="featurette-image pull-left fileicon" src="mp3.png">
+        <h2 class="featurette-heading">Multiformat. <span class="text-muted">Don't bother converting your music.</span></h2>
+        <p class="lead">Whether you are not picky when things come to audio quality and listen to mp3, or you are an Apple fan who listens to M4A, or maybe an audiophile whose ears bleed because of anything except FLAC and WAV — WebTunes got it covered. And it integrates VK.com and SoundCloud, too!</p>
+      </div>
+      
+       <hr class="featurette-divider">
+</div><div class="wt-insert"></div>
+<div class="container marketing">
+
+        <h2 class="featurette-heading">Easy-to-use. <span class="text-muted">No need for manuals.</span></h2>
+        <p class="lead">The WebTunes GUI is similar to the one all other music player have, so you are most likely to know how to use it already.</p>
+<hr class="featurette-divider">
+      <div class="featurette">
+        <img class="featurette-image pull-left" src="wt-imac-left.png"> <img class="featurette-image pull-right" src="wt-mbp-right.png">
+        <h2 class="featurette-heading">No installation required. <span class="text-muted">Listen anywhere.</span></h2>
+        <p class="lead">Whether you are not picky when things come to audio quality and listen to mp3, or you are an Apple fan who listens to M4A, or maybe an audiophile whose ears bleed because of anything except FLAC and WAV — WebTunes got it covered! No more syncing, too.</p>
+      </div>
+      <hr class="featurette-divider">
+       <div class="featurette">
+       <img class="featurette-image pull-right" src="jsdecoder.png">
+        <h2 class="featurette-heading">Advanced JavaScript-based decoder. <span class="text-muted">Better quality.</span></h2>
+        <p class="lead">The audio is decoded with an advanced decoder named Aurora.js instead of the browser's built-in one for better sound quality and more format support.</p>
+      </div>
+       <hr class="featurette-divider">
+      <center><h1 class="thinnest huge">And a lot more.</h1></center>
+   <p style="text-align:center">
+   WebTunes was developed for over 6 months to ensure the best user experience and sound quality.
+   <center><a href="http://bitbucket.org/vladkorotnev/webtunes" class="btn btn-lg btn-primary">Get it on the project page</a></center>
+   </p>
+
+</div>
+<footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>© 2013 vladkorotnev. Completely hand-written.<br> Apple is a registered trademark of Apple Inc. WebTunes and PortaTune are non-commercial projects.</p>
+      </footer>
+  </body>
+  <script src="../jquery.parallax.min.js"></script>
+</html>

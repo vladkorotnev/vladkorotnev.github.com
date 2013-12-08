@@ -3,11 +3,41 @@
   <head>
     <title>vladkorotnev software</title>
     <meta charset="utf-8">
-
+    <link href='http://fonts.googleapis.com/css?family=Exo+2:400,100&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <!-- Bootstrap -->
+            <script src="http://code.jquery.com/jquery.min.js"></script>
+   
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="my.css" rel="stylesheet" media="screen">
+     <link href="webtunes/webtunes-intro.css" rel="stylesheet" media="screen">
+     <style type="text/css">
+     .animate-control {
+	   opacity: 0;
+	      transition-property:all;
+	    transition-duration: 3s;
+	    transition-timing-function:linear;
+	    -webkit-transition-property: all;
+	    -webkit-transition-timing-function: linear;
+	    -webkit-transition-duration: 3s;
+	    -moz-transition-property:all;
+	    -moz-transition-timing-function: linear;
+	    -moz-transition-duration:3s;
+     }
+     .animate-control-shown {
+	     opacity: 1;
+	      transition-property:all;
+	    transition-duration: 3s;
+	    transition-timing-function: linear;
+	    -webkit-transition-property: all;
+	    -webkit-transition-timing-function: linear;
+	    -webkit-transition-duration: 3s;
+	    -moz-transition-property:all;
+	    -moz-transition-timing-function: linear;
+	    -moz-transition-duration: 3s;
+     }
+     
+     </style>
     <script type="text/javascript">
     
       var _gaq = _gaq || [];
@@ -20,45 +50,71 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-    
-    </script>
-  </head>
+    function introItem(item) { 
+	    $(item).removeClass('preintro').addClass('introing');
+    }
+    function reveal() {
+	    $('.revealizer').addClass('revealed');
+	    setTimeout(function() { $('.revealizer').remove() }, 3000);
+    }
+    $(document).ready(function() {
+     
+     $('.scene').parallax();
+     $('.scene').parallax('disable');
+     introItem("#headline1");
+	    setTimeout(function(){introItem(".computer")}, 1500);
+	    setTimeout(function(){introItem(".cellphone")}, 2000);
+	    setTimeout(function(){introItem("#headline2")}, 2100);
+	    setTimeout(function(){introItem(".webtunes-intro-checkit")}, 2500);
+	    setTimeout(function(){ $('.scene').parallax('enable');$('.animate-control').removeClass('animate-control').addClass('animate-control-shown'); reveal();}, 3000);
+	});
+    </script>  </head>
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-  <div class="navbar-inner">
-    <a class="brand" href="http://vladkorotnev.github.io">&nbsp;&nbsp;vladkorotnev</a>
-    <ul class="nav">
-    <li><a href="mcsm/index.html">MCSM</a></li>
-    <li><a href="gbb/index.html">GBBrowser</a></li>
-    <li><a href="learnit/index.html">LearnIt</a></li>
-      <li><a href="radio/index.html">Radio</a></li>
-      <li><a href="down/index.html">Downloads</a></li>
-      <li><a href="donation/index.html">Donate</a></li>
-      <li><a href="contact/index.html">Contact</a></li>
-    </ul>
-  </div>
+    <div class="navbar navbar-default navbar-fixed-top">
+	     <div class="navbar-header"> <ul class="nav navbar-nav">
+    <a class="navbar-brand" href="http://vladkorotnev.github.io">&nbsp;&nbsp;vladkorotnev software</a>
+     <li> <a href="webtunes/index.html">WebTunes</a> </li>
+   <li> <a href="mcsm/index.html">MCSM</a> </li>
+   <li> <a href="gbb/index.html">GBBrowser</a> </li>
+   <li> <a href="learnit/index.html">LearnIt</a> </li>
+   <li>   <a href="radio/index.html">Radio</a> </li>
+    <li>  <a href="down/index.html">Downloads</a> </li>
+   <li>   <a href="donation/index.html">Donate</a> </li>
+   <li>   <a href="contact/index.html">Contact</a> </li> </ul>
+	     </div>
 </div>
 <div id="properContent" class="proper-content">
-<meta name="apple-itunes-app" content="app-id=602644722">
 <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
       <div class="item active">
+          <div class="container">
+            <ul class="scene">
+			 <li class="layer" data-depth="0.30"> <p id="headline1" class="thinnest huge headliner preintro" >Introducing WebTunes</p>
+			 <p id="headline2" class="thinnest headliner sub preintro" >Take your music wherever you go.</p>
+			  </li>
+			 <li class="layer" data-depth="0.20"> <img class="computer preintro" src="webtunes/imac.png"> </li>
+			 <li class="layer" data-depth="0.40">  <img class="cellphone preintro" src="webtunes/iphone.png"> </li>
+			 <li class="layer" data-depth="0.60">		 <a class="btn btn-primary btn-lg webtunes-intro-checkit preintro" href="webtunes/index.html">Check it out</a></li>
+		  </ul>
+          </div>
+        </div>
+      <div class="item">
           <img src="radio/radio.png" alt="" class="macintosh">
           <div class="container">
             <div class="carousel-caption">
               <h1>Designed with simplicity in mind.</h1>
               <p class="lead">The minimalist iOS Mac app. Sounds great. Yet sounds friendly.</p>
-              <a class="btn btn-large btn-primary" href="radio/index.html">Tune in</a>
+              <a class="btn btn-lg btn-primary" href="radio/index.html">Tune in</a>
             </div>
           </div>
         </div>
         <div class="item">
-          <img src="gbb/img/main-slides/macintosh.png" alt="" class="macintosh">
+          <img src="gbb/img/main-slides/macintosh.png" alt="" class="imac">
           <div class="container">
             <div class="carousel-caption">
               <h1>Meet the ultimate imageboard toolkit.</h1>
               <p class="lead">This is an otaku heaven. For iOS, Mac and Windows.</p>
-              <a class="btn btn-large btn-primary" href="gbb/index.html">Learn more</a>
+              <a class="btn btn-lg btn-primary" href="gbb/index.html">Learn more</a>
             </div>
           </div>
         </div>
@@ -68,22 +124,22 @@
             <div class="carousel-caption">
               <h1>Minecraft servers for everyone.</h1>
               <p class="lead">No more hassle with shell scripts and config files. Meet MCServMan.</p>
-              <a class="btn btn-large btn-primary" href="mcsm/index.html">Get it now</a>
+              <a class="btn btn-lg btn-primary" href="mcsm/index.html">Get it now</a>
             </div>
           </div>
         </div>
         <div class="item">
-          <img src="learnit/edit.png" class="macintosh" alt="">
+          <img src="learnit/edit.png" class="iphone" alt="">
           <div class="container">
             <div class="carousel-caption">
               <h1>Learn anything you want.</h1>
               <p class="lead">Introducing LearnIt for the iPhone.</p>
-              	 <a class="btn btn-large btn-primary" href="learnit/index.html">Get it now</a>
+              	 <a class="btn btn-lg btn-primary" href="learnit/index.html">Get it now</a>
             </div>
           </div>
         </div>
         <div class="item">
-          <img src="ios/isound.png" class="macintosh" alt="">
+          <img src="ios/isound.png" class="iphone" alt="">
           <div class="container">
             <div class="carousel-caption">
               <h1>Tune up your iPhone.</h1>
@@ -93,10 +149,10 @@
           </div>
         </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">></a>
+      <a class="left carousel-control animate-control"  href="#myCarousel" data-slide="prev"><i class="glyphicon-chevron-left"></i></a>
+      <a class="right carousel-control animate-control"  href="#myCarousel" data-slide="next"><i class="glyphicon-chevron-right"></i></a>
     </div>
- 
+ <div class="revealizer"></div>
 <div class="container marketing">
 
     <hr class="featurette-divider">
@@ -109,9 +165,9 @@
 
       <div class="featurette">
         <img class="featurette-image centered" src="gbb/mac/gbbmacbook.png">
-        <h2 class="featurette-heading">GBBrowser. <span class="muted">This is the otaku heaven.</span></h2>
+        <h2 class="featurette-heading">GBBrowser. <span class="text-muted">This is the otaku heaven.</span></h2>
         <p class="lead">Browse and search in Cover Flow, perform statistical analysis of character appearances and finally, show off your favourite ones as a screensaver. Moreover, this is not another half-working cross-platform app. It was crafted with care for iOS and Mac for best performance.</p>
-       <center> <a class="btn btn-large" href="gbb/index.html">
+       <center> <a class="btn btn-lg" href="gbb/index.html">
     See for yourself
   </a></center>
 
@@ -122,9 +178,9 @@
 
       <div class="featurette">
         <img class="featurette-image centered" src="mcsm/conf.png">
-        <h2 class="featurette-heading">MCServMan. <span class="muted">Minecraft server made easy.</span></h2>
+        <h2 class="featurette-heading">MCServMan. <span class="text-muted">Minecraft server made easy.</span></h2>
         <p class="lead">A custom GUI making it easy to setup a Minecraft server. Open it, click 'Start' and you've set up a basic server! Not to mention a flexible plugin system available in it.</p>
-         <center> <a class="btn btn-large" href="mcsm/index.html">
+         <center> <a class="btn btn-lg" href="mcsm/index.html">
     Check it out
   </a></center>
       </div>
@@ -133,9 +189,9 @@
 
     <div class="featurette">
         <img class="featurette-image centered" src="learnit/sprint.png">
-        <h2 class="featurette-heading">LearnIt. <span class="muted">Learn anything with ease.</span></h2>
+        <h2 class="featurette-heading">LearnIt. <span class="text-muted">Learn anything with ease.</span></h2>
         <p class="lead">Type in your questions and answer, look through them a couple of times and then start testing yourself. All in a matter of seconds.</p>
-         <center> <a class="btn btn-large" href="learnit/index.html">
+         <center> <a class="btn btn-lg" href="learnit/index.html">
     Have a try
   </a></center>
       </div>
@@ -144,9 +200,9 @@
 
     <div class="featurette">
         <img class="featurette-image centered" src="radio/radio.png">
-        <h2 class="featurette-heading">RadioApp. <span class="muted">Sounds great. And friendly.</span></h2>
+        <h2 class="featurette-heading">RadioApp. <span class="text-muted">Sounds great. And friendly.</span></h2>
         <p class="lead">Tune in to your favourite stations without having to derp around the interface.</p>
-         <center> <a class="btn btn-large" href="radio/index.html">
+         <center> <a class="btn btn-lg" href="radio/index.html">
     Tune in
   </a></center>
       </div>
@@ -155,9 +211,9 @@
 
       <div class="featurette">
         <img class="featurette-image centered" src="ios/isound.png">
-        <h2 class="featurette-heading">iSounds. <span class="muted">Give your iPhone a personal touch.</span></h2>
+        <h2 class="featurette-heading">iSounds. <span class="text-muted">Give your iPhone a personal touch.</span></h2>
         <p class="lead">OS9 Platinum Sounds. Apple Newton sounds. Or whatever matches your theme or mood. It's all up to you.</p>
-        <center> <a class="btn btn-large" href="http://isounds.tk">
+        <center> <a class="btn btn-lg" href="http://isounds.tk">
     iSounds project site
   </a></center>
       </div>
@@ -167,29 +223,25 @@
       <!-- /END THE FEATURETTES -->
 
    </div>
-      <div class="hero-container">
-<div class="hero-subclassed">
-<div class="hero-phone" align="center" align="center">
+
   </div>
   <center><h1>Didn't find someting?</h1></center>
 
   <p>
     <center>
-    <p class="lead">I have been writing software for quite a long time, so making pages for all of the programs would make the site extremely cluttered (and make me extremely tired since I hand-code my HTML). You may try your luck on the <a href="down/index.html">Downloads</a> page where the 'homeless' files rest (mostly abandoned projects) or on my webplaces below. Still haven't found it? Then <a href="contact/index.html">contact</a> me.</p>
-    <br><a class="btn btn-large" href="http://vladkorotnev.me">
+    <p>I have been writing software for quite a long time, so making pages for all of the programs would make the site extremely cluttered (and make me extremely tired since I hand-code my HTML). You may try your luck on the <a href="down/index.html">Downloads</a> page where the 'homeless' files rest (mostly abandoned projects) or on my webplaces below. Still haven't found it? Then <a href="contact/index.html">contact</a> me.</p>
+    <br><a class="btn btn-lg" href="http://vladkorotnev.me">
       My home site
-    </a>&nbsp;<a class="btn btn-large" href="https://github.com/vladkorotnev/">
+    </a>&nbsp;<a class="btn btn-lg" href="https://github.com/vladkorotnev/">
      Github
-    </a>&nbsp;<a class="btn btn-large" href="https://gist.github.com/vladkorotnev/">
+    </a>&nbsp;<a class="btn btn-lg" href="https://gist.github.com/vladkorotnev/">
      Gist
-    </a>&nbsp;<a class="btn btn-large" href="http://youtube.com/app0the/">
+    </a>&nbsp;<a class="btn btn-lg" href="http://youtube.com/app0the/">
       YouTube</a><br>
     </center>
     
   </p>
-</div>
-</div>
-</div>
+
 
       <!-- FOOTER -->
       <footer>
@@ -201,6 +253,6 @@
        </div>
     <script src="http://code.jquery.com/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-
+      <script src="jquery.parallax.min.js"></script>
   </body>
 </html>
