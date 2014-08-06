@@ -50,31 +50,17 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-    function introItem(item) { 
-	    $(item).removeClass('preintro').addClass('introing');
-    }
-    function reveal() {
-	    $('.revealizer').addClass('revealed');
-	    setTimeout(function() { $('.revealizer').remove() }, 3000);
-    }
+
     $(document).ready(function() {
-     
-     $('.scene').parallax();
-     $('.scene').parallax('disable');
-     introItem("#headline1");
-	    setTimeout(function(){introItem(".computer")}, 1500);
-	    setTimeout(function(){introItem(".cellphone")}, 2000);
-	    setTimeout(function(){introItem("#headline2")}, 2100);
-	    setTimeout(function(){introItem(".webtunes-intro-checkit")}, 2500);
-	    setTimeout(function(){ $('.scene').parallax('enable');$('.animate-control').removeClass('animate-control').addClass('animate-control-shown'); reveal();}, 3000);
-	});
+    
+   	});
     </script>  </head>
   <body>
     <div class="navbar navbar-default navbar-fixed-top">
 	     <div class="navbar-header"> <ul class="nav navbar-nav">
     <a class="navbar-brand" href="http://vladkorotnev.github.io">&nbsp;&nbsp;vladkorotnev software</a>
+    <li>   <a href="aiedit/index.html">AIEdit</a> </li>
      <li> <a href="webtunes/index.html">WebTunes</a> </li>
-   <li> <a href="mcsm/index.html">MCSM</a> </li>
    <li> <a href="gbb/index.html">GBBrowser</a> </li>
    <li> <a href="learnit/index.html">LearnIt</a> </li>
    <li>   <a href="radio/index.html">Radio</a> </li>
@@ -86,16 +72,21 @@
 <div id="properContent" class="proper-content">
 <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
-      <div class="item active">
-          <div class="container">
-            <ul class="scene">
-			 <li class="layer" data-depth="0.30"> <p id="headline1" class="thinnest huge headliner preintro" >Introducing WebTunes</p>
-			 <p id="headline2" class="thinnest headliner sub preintro" >Take your music wherever you go.</p>
-			  </li>
-			 <li class="layer" data-depth="0.20"> <img class="computer preintro" src="webtunes/imac.png"> </li>
-			 <li class="layer" data-depth="0.40">  <img class="cellphone preintro" src="webtunes/iphone.png"> </li>
-			 <li class="layer" data-depth="0.60">		 <a class="btn btn-primary btn-lg webtunes-intro-checkit preintro" href="webtunes/index.html">Check it out</a></li>
-		  </ul>
+      <div class="item active burakku" style=" overflow: hidden; ">
+          <img src="aiedit/aie.png" alt="" style="position: relative !important;
+right: -10% !important;
+float: right;
+width: auto !important;
+height: auto !important;
+max-width: 1000000px !important;
+max-height: 1000000px !important;
+z-index: 0 !important;">
+          <div class="container ">
+            <div class="carousel-caption">
+              <h1 class="burakku-t">Cassettes are back to rule the world!</h1>
+              <p class="lead burakku-t">Introducing AIEdit 2.<br>Your one-stop solution for tape recording.</p>
+              <a class="btn btn-lg btn-primary" href="aiedit/index.html">Spin the reels</a>
+            </div>
           </div>
         </div>
       <div class="item">
@@ -103,7 +94,7 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Designed with simplicity in mind.</h1>
-              <p class="lead">The minimalist iOS Mac app. Sounds great. Yet sounds friendly.</p>
+              <p class="lead">The minimalistic Mac radio app. Sounds great. Yet sounds friendly.</p>
               <a class="btn btn-lg btn-primary" href="radio/index.html">Tune in</a>
             </div>
           </div>
@@ -119,16 +110,6 @@
           </div>
         </div>
         <div class="item">
-          <img src="soft/mcsm/CreeperMac.png" width=300 height=300 class="macpro" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Minecraft servers for everyone.</h1>
-              <p class="lead">No more hassle with shell scripts and config files. Meet MCServMan.</p>
-              <a class="btn btn-lg btn-primary" href="mcsm/index.html">Get it now</a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
           <img src="learnit/edit.png" class="iphone" alt="">
           <div class="container">
             <div class="carousel-caption">
@@ -138,25 +119,14 @@
             </div>
           </div>
         </div>
-        <div class="item">
-          <img src="ios/isound.png" class="iphone" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Tune up your iPhone.</h1>
-              <p class="lead">Add sounds to your phone's UI with iSounds or a little timer for your camera with CamTime. Get them on Cydia.</p>
- 
-            </div>
-          </div>
-        </div>
       </div>
-      <a class="left carousel-control animate-control"  href="#myCarousel" data-slide="prev"><i class="glyphicon-chevron-left"></i></a>
-      <a class="right carousel-control animate-control"  href="#myCarousel" data-slide="next"><i class="glyphicon-chevron-right"></i></a>
+      <a class="left carousel-control"  href="#myCarousel" data-slide="prev">←</a>
+      <a class="right carousel-control"  href="#myCarousel" data-slide="next">→</a>
     </div>
- <div class="revealizer"></div>
 <div class="container marketing">
 
-    <hr class="featurette-divider">
-         <center><h1>Featured software</h1></center>
+ 
+         <center><h1>More software</h1></center>
 
 
       <!-- START THE FEATURETTES -->
@@ -172,17 +142,6 @@
   </a></center>
 
 
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image centered" src="mcsm/conf.png">
-        <h2 class="featurette-heading">MCServMan. <span class="text-muted">Minecraft server made easy.</span></h2>
-        <p class="lead">A custom GUI making it easy to setup a Minecraft server. Open it, click 'Start' and you've set up a basic server! Not to mention a flexible plugin system available in it.</p>
-         <center> <a class="btn btn-lg" href="mcsm/index.html">
-    Check it out
-  </a></center>
       </div>
 
       <hr class="featurette-divider">
@@ -207,16 +166,6 @@
   </a></center>
       </div>
 
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image centered" src="ios/isound.png">
-        <h2 class="featurette-heading">iSounds. <span class="text-muted">Give your iPhone a personal touch.</span></h2>
-        <p class="lead">OS9 Platinum Sounds. Apple Newton sounds. Or whatever matches your theme or mood. It's all up to you.</p>
-        <center> <a class="btn btn-lg" href="http://isounds.tk">
-    iSounds project site
-  </a></center>
-      </div>
 
       <hr class="featurette-divider">
 
@@ -225,7 +174,7 @@
    </div>
 
   </div>
-  <center><h1>Didn't find someting?</h1></center>
+  <center><h1>Didn't find something?</h1></center>
 
   <p>
     <center>

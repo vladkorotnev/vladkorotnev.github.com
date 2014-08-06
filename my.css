@@ -2,7 +2,20 @@
 
     /* GLOBAL STYLES
     -------------------------------------------------- */
-    /* Padding below the footer and lighter body text */
+
+.vignette {
+	-webkit-box-shadow: inset 0px 0px 85px rgba(0,0,0,0.4);
+	-moz-box-shadow:    inset 0px 0px 85px rgba(0,0,0,0.4);
+	box-shadow:         inset 0px 0px 85px rgba(0,0,0,0.4);
+	
+	line-height: 0;         /* ensure no space between bottom */
+		
+	display: inline-block;  /* don't go wider than image */
+}
+.vignette img {
+	position: relative; 
+	z-index: -1;            /* position beneath */
+}
 
     body {
       padding-bottom: 40px;
@@ -18,7 +31,16 @@
     background-color: rgba(0,0,0,0.76) !important;
 
     }
-
+    
+ .burakku {
+	background: black;
+	color: white !important;
+	text-shadow:1px 1px 19px rgba(255,255,255,1) !important;
+}
+ .burakku-t {
+	color: white !important;
+	text-shadow:1px 1px 19px rgba(255,255,255,1) !important;
+}
 .proper-content {
     padding-top: 51px; /* >= navbar height */
 }

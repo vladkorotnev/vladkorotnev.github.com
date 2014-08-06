@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AIEdit 2</title>
+    <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../my.css" rel="stylesheet" media="screen">
+    <script type="text/javascript">
+    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-24659572-1']);
+      _gaq.push(['_setDomainName', 'github.io']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    
+    </script>
+  </head>
+  <body style="background-color: rgb(237,237,237)">
+  <div class="navbar navbar-default navbar-fixed-top">
+	     <div class="navbar-header"> <ul class="nav navbar-nav">
+    <a class="navbar-brand" href="http://vladkorotnev.github.io">&nbsp;&nbsp;vladkorotnev software</a>
+    <li class="active">   <a href="#">AIEdit</a> </li>
+   <li> <a  href="../webtunes/index.html">WebTunes</a></li>
+   <li> <a href="../gbb/index.html">GBBrowser</a> </li>
+   <li> <a href="../learnit/index.html">LearnIt</a> </li>
+   <li>   <a href="../radio/index.html">Radio</a> </li>
+    <li>  <a href="../down/index.html">Downloads</a> </li>
+   <li>   <a href="../donation/index.html">Donate</a> </li>
+   <li>   <a href="../contact/index.html">Contact</a> </li> </ul>
+	     </div></div>
+	     
+<div class="proper-content">
+<div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+ <div class="item active burakku" style=" overflow: hidden; ">
+          <img src="aie.png" alt="" style="position: relative !important;
+right: -10% !important;
+float: right;
+width: auto !important;
+height: auto !important;
+max-width: 1000000px !important;
+max-height: 1000000px !important;
+z-index: 0 !important;">
+          <div class="container ">
+            <div class="carousel-caption">
+              <h1 class="burakku-t">Cassettes are back to rule the world!</h1>
+              <p class="lead burakku-t">Introducing AIEdit 2.<br>Your one-stop solution for tape recording.</p>
+            </div>
+          </div>
+        </div></div></div>
+
+<div class="container marketing">
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider" style="opacity:0">
+
+      <div class="featurette">
+        <img class="featurette-image centered" src="eq.png">
+        <h2 class="featurette-heading">Precision 10-band EQ. <span class="text-muted">Full control over your sound.</span></h2>
+        <p class="lead">Adjust the frequency response to your liking and your rig's performance, and enjoy your music.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image centered" src="prop.png">
+        <h2 class="featurette-heading">Automatization. <br><span class="text-muted">Just add a tracklist and go.</span></h2>
+        <p class="lead">AIEdit automatically finds when it's time to flip the tape so no music tails are left unrecorded due to the side ending while the music's still playing. Plus, it can rewind the tape when it's done for you.</p>
+        
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image centered" src="trans.png">
+        <h2 class="featurette-heading">Transport control. <span class="text-muted">Let the computer work for you.</span></h2>
+        <p class="lead">Using an Arduino you can let AIEdit control your tape deck. It will automatically rewind, start and stop the tape when it's needed. All you have to do is flip the tape when asked. And on auto-reverse decks, no need for that, too!<br><br>
+	        Currently supported models: </p>
+	        <ul>
+	        	<li>Pioneer CT-S320 (or any other with SR Bus connection) — <a href="https://github.com/vladkorotnev/TapeStuff/blob/master/PioneerCtl/PioneerCtl.ino">this Arduino sketch</a>, no reverse. Arduino pin 7 to Control In TRS tip.</li>
+	        </ul><br>
+	        <p class="lead">Planned models:</p>
+	        <ul>
+	        	<li>Marantz PMD510 — recently obtained (thanks Alex and Daniil), researching the protocols...</li>
+	        	<li>Nakamichi Dragon — if Alex would like to get an Arduino or provide his machine for development time</li>
+	        </ul>
+       
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+      <img class="featurette-image centered" src="au.png">
+        <h2 class="featurette-heading">CoreAudio powered. <span class="text-muted">Pure sound quality.</span></h2>
+        <p class="lead">Click a channel button to tune in. If there is no station assigned to it, you will be asked to assign it. Once you're listening to a station, click it's button again to edit it's name or URL.</p>
+      </div>
+      
+  
+      
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+      <a name="downnow"></a>
+    </div>
+
+  </div>
+  <center><h1>Start recording right now</h1><br><a href="../soft/aiedit2.zip"><img src="aie.png"></a></center>
+  
+  <p>
+    <center>
+    <a class="btn btn-primary btn-lg" href="../soft/aiedit2.zip">
+      Download for OS X
+    </a>&nbsp;<a class="btn btn-primary btn-lg" href="../soft/tape.zip">
+      Download A4 tape cover templates
+    </a>&nbsp;<a class="btn btn-lg" href="https://github.com/vladkorotnev/TapeStuff/AIEdit">
+      View source
+    </a><br>
+    <small class="text-muted">Version 2.0a, 24 July 2014. Requires Mac OS 10.7 or higher</small>
+    </center>
+    
+  </p>
+</div>
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>© 2014 vladkorotnev, cassette by manicho</p><br>
+      </footer>
+
+
+  
+  </body>
+</html>
