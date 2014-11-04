@@ -2,7 +2,14 @@
 
     /* GLOBAL STYLES
     -------------------------------------------------- */
-
+.iphone {
+	max-height: 800px;
+	top: 0px;
+	
+}
+.iphone-pt {
+	max-width: 500px;
+}
 .ico {
 	max-width: 128px; max-height: 128px;
 }
