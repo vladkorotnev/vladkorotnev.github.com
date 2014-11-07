@@ -13,6 +13,9 @@
 .ico {
 	max-width: 128px; max-height: 128px;
 }
+.ios-icon-hero {
+	max-height: 300px; 
+}
     body {
       padding-bottom: 40px;
       color: #5a5a5a;
